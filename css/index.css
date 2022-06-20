@@ -213,6 +213,7 @@ footer .hotlog {
         font-size: .5rem;
     }
     header .contacts {
+        display: block;
         height: 100%;
         margin-right: 3vw;
         padding-top: 2em;
