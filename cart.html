@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=" Content-Type " content="text/html; " charset="windows-1251 ">
+    <!-base href="http://www.ltz.ru ">
+    <meta http-equiv="Content-Type " content="text/html; charset=windows-1251 ">
+    <title>Запасные части ЛТЗ, Т-40. Фирма Авторитет (г.Липецк)</title>
+    <meta content="ЛТЗ, Т-40, Т40, ЛТЗ55, ЛТЗ60, запасные части Т40, запасные части Т-40, запасные части ЛТЗ, трактора ЛТЗ, запчасти Т-40, запчасти Т40, запчасти ЛТЗ, сцепление, ГУР, шестерня, дилер, мост, купить " name="KEYWORDS ">
+    <meta content="Запасные части к тракторам Т-40, ЛТЗ 55, ЛТЗ 60,трактора ЛТЗ " name="DESCRIPTION ">
+    <link href="http://www.ltz.ru/new/style.css " rel="stylesheet " type="text/css ">
+    <script type="text/javascript " src="http://www.ltz.ru/new/a.js "></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="top_header">
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="/img/logonew.png" alt="">
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#">
+                        <img src="/img/shopping-cart.png" alt="">
+                    </a>
+                </div>
+                <div class="lip_date">
+                    <p>&mdash;&mdash;&mdash;СЕЙЧАС В ЛИПЕЦКЕ&mdash;&mdash;&mdash;</p>
+                    <font class="date_time">
+                        <script>
+                            var now = new Date()
+                            var options = {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
+                                hour: 'numeric',
+                                minute: 'numeric',
+                                timeZone: "Europe/Moscow"
+                            };
+                            let formatter = new Intl.DateTimeFormat('ru-RU', options);
+                            let lipDate = formatter.format(now);
+                            lipDateArr = lipDate.split(' г., ');
+                            document.write("<br>" + lipDateArr[0] + " <b>" + lipDateArr[1] + "</b></br>");
+                        </script>
+                    </font>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="/index.html">ГЛАВНАЯ</a></li>
+                <li><a href="#">ПРОДУКЦИЯ</a></li>
+                <li><a href="#">ДОСТАВКА</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li>
+                    <p><a href="tel:+74742354210">(4742) 35-42-10</a></p>
+                    <p><a href="tel:+74742361447">(4742) 36-14-47</a></p>
+                </li>
+                <li>
+                    <p><a href="mailto:avtoritet48@mail.ru?subject=Заказ запчастей">avtoritet48@mail.ru</a></p>
+                </li>
+                <li class="cart_li">
+                    <a href="cart.html">
+                        <img src="/img/shopping-cart-small.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu_nav">
+                <ul class="menu_1">
+                    <li><a href="/index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+                <ul class="menu_2">
+                    <li><a href="#">ПРОДУКЦИЯ</a></li>
+                    <li><a href="#">ДОСТАВКА</a></li>
+                </ul>
+                <ul class="menu_3">
+                    <li>
+                        <p><a href="tel:+74742354210">(4742) 35-42-10</a></p>
+                        <p><a href="tel:+74742361447">(4742) 36-14-47</a></p>
+                        <p><a href="mailto:avtoritet48@mail.ru?subject=Заказ запчастей">avtoritet48@mail.ru</a></p>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="/img/icons8-chevron-down-100.png">
+    </button>
+    <div class="h1_name">
+        <h1>Корзина</h1>
+    </div>
+    <div class="content">
+
+        <table class="cart_content tb-1">
+            <thead>
+                <tr>
+                    <th scope="col">Вес/штука</th>
+                    <th scope="col">№ по каталогу</th>
+                    <th scope="col">Наименование</th>
+                    <th scope="col">Цена с НДС, руб/штука</th>
+                    <th scope="col">Количество</th>
+                    <th scope="col">Вес/итого</th>
+                    <th scope="col">Цена с НДС, руб/итого</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" data-label="Вес/штука">9.010</td>
+                    <td data-label="№ по каталогу">Т40М1-6700012</td>
+                    <td data-label="Наименование">стекло переднее ЛТЗ 55,60 1110х769</td>
+                    <td data-label="Цена с НДС, руб/штука">1'910.00</td>
+                    <td data-label="Количество">1</td>
+                    <td data-label="Вес/итого">9.010</td>
+                    <td data-label="Цена с НДС, руб/итого">1'910.00</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Вес/штука">4.340</td>
+                    <td data-label="№ по каталогу">Т40М1-6700013</td>
+                    <td data-label="Наименование">стекло боковое ЛТЗ 55,60 642х692</td>
+                    <td data-label="Цена с НДС, руб/штука">1'022.00</td>
+                    <td data-label="Количество">2</td>
+                    <td data-label="Вес/итого">8.680</td>
+                    <td data-label="Цена с НДС, руб/итого">2'044.00</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Вес/штука">3.900</td>
+                    <td data-label="№ по каталогу">Т40М1-6706016-В</td>
+                    <td data-label="Наименование">стекло заднее ЛТЗ с отверстиями 1098х702</td>
+                    <td data-label="Цена с НДС, руб/штука">2'102.00</td>
+                    <td data-label="Количество">4</td>
+                    <td data-label="Вес/итого">15.600</td>
+                    <td data-label="Цена с НДС, руб/итого">8'408.00</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Вес/штука">130.800</td>
+                    <td data-label="№ по каталогу">Т40-0000530-А1</td>
+                    <td data-label="Наименование">ось Т40 (под ГУР)</td>
+                    <td data-label="Цена с НДС, руб/штука">52'803.00</td>
+                    <td data-label="Количество">2</td>
+                    <td data-label="Вес/итого">261.600</td>
+                    <td data-label="Цена с НДС, руб/итого">105'606.00</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="Вес/штука">36.900</td>
+                    <td data-label="№ по каталогу">Т25-4628520-Б1</td>
+                    <td data-label="Наименование">кронштейн рычагов </td>
+                    <td data-label="Цена с НДС, руб/штука">11'882.00</td>
+                    <td data-label="Количество">12</td>
+                    <td data-label="Вес/итого">442.800</td>
+                    <td data-label="Цена с НДС, руб/итого">142'584.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="#" class="js-open-modal btn" data-modal="1">Отправить заказ на email</a>
+    <div class="modal" data-modal="1">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <!--p class="modal__title">Введите свой email</p-->
+        <p><input type="text" name="userEmail" placeholder="Введите свой email" /></p>
+        <a href="#" class="btn js-modal-close" data-modal="1">Отправить</a>
+    </div>
+
+    <script>
+        ! function(e) {
+            "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function(e) {
+                for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;) ++n;
+                return Boolean(o[n])
+            }), "function" != typeof e.closest && (e.closest = function(e) {
+                for (var t = this; t && 1 === t.nodeType;) {
+                    if (t.matches(e)) return t;
+                    t = t.parentNode
+                }
+                return null
+            })
+        }(window.Element.prototype);
+        document.addEventListener('DOMContentLoaded', function() {
+            /* Записываем в переменные массив элементов-кнопок и подложку.
+               Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+            var modalButtons = document.querySelectorAll('.js-open-modal'),
+                overlay = document.querySelector('.js-overlay-modal'),
+                closeButtons = document.querySelectorAll('.js-modal-close');
+            /* Перебираем массив кнопок */
+            modalButtons.forEach(function(item) {
+                /* Назначаем каждой кнопке обработчик клика */
+                item.addEventListener('click', function(e) {
+                    /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+                       люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+                       Нужно подстраховаться. */
+                    e.preventDefault();
+                    /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+                       и будем искать модальное окно с таким же атрибутом. */
+                    var modalId = this.getAttribute('data-modal'),
+                        modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+                    /* После того как нашли нужное модальное окно, добавим классы
+                       подложке и окну чтобы показать их. */
+                    modalElem.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }); // end click
+            }); // end foreach
+            closeButtons.forEach(function(item) {
+                item.addEventListener('click', function(e) {
+                    var parentModal = this.closest('.modal');
+
+                    document.body.style.overflow = 'scroll';
+                    parentModal.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            }); // end foreach
+            document.body.addEventListener('keyup', function(e) {
+                var key = e.keyCode;
+                if (key == 27) {
+                    document.body.style.overflow = 'scroll';
+                    document.querySelector('.modal.active').classList.remove('active');
+                    document.querySelector('.overlay').classList.remove('active');
+
+                };
+            }, false);
+            overlay.addEventListener('click', function() {
+                document.querySelector('.modal.active').classList.remove('active');
+                this.classList.remove('active');
+            });
+        }); // end ready
+    </script>
+
+    <footer>
+        <div class="outline"></div>
+
+        <script type="text/javascript" language="javascript">
+            hotlog_js = "1.0";
+            hotlog_r = "" + Math.random() + "&s=411223&im=114&r=" + escape(document.referrer) + "&pg=" +
+                escape(window.location.href);
+            document.cookie = "hotlog=1; path=/";
+            hotlog_r += "&c=" + (document.cookie ? "Y" : "N");
+        </script>
+        <script type="text/javascript" language="javascript1.1">
+            hotlog_js = "1.1";
+            hotlog_r += "&j=" + (navigator.javaEnabled() ? "Y" : "N")
+        </script>
+        <script type="text/javascript" language="javascript1.2">
+            hotlog_js = "1.2";
+            hotlog_r += "&wh=" + screen.width + 'x' + screen.height + "&px=" +
+                (((navigator.appName.substring(0, 3) == "Mic")) ?
+                    screen.colorDepth : screen.pixelDepth)
+        </script>
+        <script type="text/javascript" language="javascript1.3">
+            hotlog_js = "1.3"
+        </script>
+        <script type="text/javascript" language="javascript">
+            hotlog_r += "&js=" + hotlog_js;
+            document.write("<a href='http://click.hotlog.ru/?411223' target='_top'><img class='hotlog'" +
+                " src='http://hit22.hotlog.ru/cgi-bin/hotlog/count?" +
+                hotlog_r + "&' width=88 height=31 alt=HotLog;></a>")
+        </script>
+        <noscript>
+            <a href="http://click.hotlog.ru/?411223" target="_top"><img src="http://hit22.hotlog.ru/cgi-bin/hotlog/count?s=411223&amp;im=114" border="0" 
+            width="88" height="31" alt="HotLog"></a>
+        </noscript>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
