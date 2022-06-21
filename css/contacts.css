@@ -17,8 +17,23 @@
     margin-top: 20px;
 }
 
-.inner_content {
+.inner {
+    clear: both;
+}
+
+.inner .b {
+    float: left;
+    margin-top: 0;
     margin-left: 15px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-size: .9rem;
+    line-height: .9rem;
+    width: 65px;
+}
+
+.inner_content {
+    padding-right: 0;
     font-family: Arial, sans-serif;
     color: #000;
     font-size: .9rem;
@@ -29,14 +44,21 @@
     margin-left: 5rem;
 }
 
-.inner_content#opt b {}
+.inner_content#opt_last p {
+    margin-left: 5rem;
+}
 
 .inner_content a {
     color: #e70e19;
 }
 
+.inner_content#roz {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
 @media screen and (max-width: 900px) {
-    #opt {
+    #opt_last {
         border-bottom: solid 3px #ccc;
     }
 }
