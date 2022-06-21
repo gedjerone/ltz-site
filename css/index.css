@@ -394,7 +394,7 @@ footer .hotlog {
     }
     .content .promo_ltz .ltz1>img {
         max-width: 100%;
-        min-height: 193px;
+        max-height: 193px;
         display: block;
     }
     .content .promo_ltz .ltz1 .ltz1_1_img {
