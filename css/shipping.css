@@ -1,3 +1,13 @@
+.h1_name h1 {
+    font-family: Arial, sans-serif;
+    color: #e70e19;
+    font-size: 18pt;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
 .inner {
     font-family: Arial, sans-serif;
     color: #000;
@@ -73,7 +83,6 @@
     .right_inner {
         border-right: none;
         float: none;
-        margin: 0;
     }
     .h_top p {
         margin-top: 10px;
