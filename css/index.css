@@ -383,6 +383,8 @@ footer .hotlog {
     }
     .content .promo_ltz * {
         margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .content .promo_ltz .ltz1 {
         display: flex;
