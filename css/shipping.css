@@ -73,6 +73,7 @@
     .right_inner {
         border-right: none;
         float: none;
+        margin: 0;
     }
     .h_top p {
         margin-top: 10px;
