@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: .1em;
+    margin-right: .1em;
+    padding: .5em;
+}
+
+.add {
+    width: 8rem;
+    margin-left: .1em;
+    margin-right: 2em;
+    font-size: .8em;
+}
+
+input {
+    width: 6em;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.counter {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 930px) {
+    .btn {
+        line-height: 20px;
+    }
+    .add {
+        float: left;
+    }
+}
