@@ -19,6 +19,7 @@ input {
 .category {
     color: #ea121e;
     width: 100%;
+    padding-bottom: 0;
 }
 
 .category td {
@@ -58,7 +59,7 @@ input {
     float: left;
     left: 1.8rem;
     padding-left: 8px;
-    margin-top: .6rem;
+    margin-top: .4rem;
     margin-bottom: .4rem;
     width: 2rem;
     background-image: url('img/icons8-chevron-up-48.png');
@@ -149,5 +150,7 @@ tr {
     }
     .hider_up {
         width: 1.6rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
     }
 }
