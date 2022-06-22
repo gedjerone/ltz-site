@@ -67,6 +67,7 @@ header ul li {
 
 header ul .cart_li {
     display: inline-block;
+    transition: all .2s;
 }
 
 header ul li p {
@@ -82,10 +83,15 @@ header a {
     font-size: 9pt;
     font-weight: 800;
     white-space: nowrap;
+    transition: all .2s;
 }
 
 header a:hover {
-    color: rgb(232, 118, 94);
+    color: #881218;
+}
+
+header ul .cart_li:hover {
+    transform: scale(0.9);
 }
 
 header .menu_nav {
@@ -171,6 +177,32 @@ footer .hotlog {
 
 .btn:hover {
     background-color: #b30e16;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 10px;
+    font-size: 5px;
+    object-fit: cover;
+}
+
+#myBtn>img {
+    width: 40px;
+    height: 40px;
+}
+
+#myBtn:hover {
+    background-color: #ccc;
+    border-radius: 25px;
 }
 
 
@@ -340,29 +372,6 @@ footer .hotlog {
     }
     .btn:hover {
         background-color: #b30e16;
-    }
-    #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
-        background: none;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 5px 5px;
-        border-radius: 10px;
-        font-size: 5px;
-        object-fit: cover;
-    }
-    #myBtn>img {
-        width: 40px;
-        height: 40px;
-    }
-    #myBtn:hover {
-        background-color: #ccc;
-        border-radius: 25px;
     }
     footer {
         margin-left: 0px;
