@@ -8,8 +8,8 @@
 }
 
 .cart_content {
-    max-width: 1200px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tb-1 {
@@ -38,6 +38,13 @@ table th {
     border-radius: 0px;
     font-weight: 700;
     white-space: nowrap;
+}
+
+table td {
+    border-bottom: 1px solid #ccc;
+    font-size: .8em;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
 }
 
 table th:nth-child(even) {
@@ -154,7 +161,7 @@ table td:not(:last-child) {
 
 /*MODAL WINDOW*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
     .content {
         margin-right: 15px;
         padding-right: 15px;
@@ -194,6 +201,7 @@ table td:not(:last-child) {
         content: attr(aria-label);
         */
         content: attr(data-label);
+        padding-right: 2rem;
         float: left;
         font-weight: 700;
         font-size: .7rem;
