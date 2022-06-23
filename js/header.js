@@ -1,21 +1,4 @@
 class Header {
-
-    get_time_z() {
-        const request = new XMLHttpRequest();
-        const url = "server/lip_time.php?time=now"
-        request.open('GET', url, true);
-        request.responseType = "string";
-        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        request.addEventListener("readystatechange", () => {
-
-            if (request.readyState === 4 && request.status === 200) {
-                console.log(request.response);
-                this.render(request.response);
-            }
-        });
-        request.send();
-    }
-
     get_time() {
         var now = new Date();
         var options = {
@@ -28,10 +11,7 @@ class Header {
         };
         var formatter = new Intl.DateTimeFormat('ru-RU', options);
         let lipDate = formatter.format(now);
-        alert("PIDORIUS");
-        alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
-        alert(is_ios);
 
         if (is_ios == true) {
             var lipdata = lipDate;
@@ -41,33 +21,23 @@ class Header {
                 if (lipdata[i] == '.') {
                     for (var j = 0; j < i - 1; j++) {
                         time_1 += lipdata[j];
-                        console.log(lipdata[j])
                     }
                 }
                 if (lipdata[i] == 'в' && lipdata[i - 2] == '.') {
-                    console.log(lipdata[i])
                     for (var k = i + 1; k < lipdata.length; k++) {
                         time_2 += lipdata[k];
-                        console.log(lipdata[k])
                     }
                 }
             }
-            //var [time_1, time_2] = lipdata.split("г. в ");
-            console.log(time_1)
-            console.log(time_2)
         } else {
             var lipdata = lipDate.toString();
             var [time_1, time_2] = lipdata.split('г., ');
         }
-        alert(time_1);
-        alert(time_2);
         const html_time = `
             <br>
                 ${time_1}<b>${time_2}</b>
             </br>
         `
-        alert(html_time);
-        console.log(html_time);
         return html_time;
     }
 
