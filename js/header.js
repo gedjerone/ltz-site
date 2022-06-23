@@ -31,12 +31,31 @@ class Header {
         alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
         alert(is_ios);
-        var lipdata = lipDate.toString();
+
         if (is_ios == true) {
-            var [time_1, time_2] = lipdata.split("г. в ");
+            var lipdata = lipDate;
+            var time_1 = '';
+            var time_2 = '';
+            for (var i = 0; i < lipdata.length; i++) {
+                if (lipdata[i] == '.') {
+                    for (var j = 0; j < i - 1; j++) {
+                        time_1 += lipdata[j];
+                        console.log(lipdata[j])
+                    }
+                }
+                if (lipdata[i] == 'в' && lipdata[i - 2] == '.') {
+                    console.log(lipdata[i])
+                    for (var k = i + 1; k < lipdata.length + 1; k++) {
+                        time_1 += lipdata[k];
+                        console.log(lipdata[k])
+                    }
+                }
+            }
+            //var [time_1, time_2] = lipdata.split("г. в ");
             console.log(time_1)
             console.log(time_2)
         } else {
+            var lipdata = lipDate.toString();
             var [time_1, time_2] = lipdata.split('г., ');
         }
         alert(time_1);
