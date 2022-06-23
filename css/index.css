@@ -124,10 +124,6 @@ footer .hotlog {
     .btn:hover {
         background-color: #b30e16;
     }
-    footer {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
     .content {
         display: block;
     }
