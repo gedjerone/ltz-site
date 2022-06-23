@@ -37,10 +37,10 @@ input {
 .hider {
     position: absolute;
     width: 95%;
-    height: 3rem;
-    margin-top: 0;
+    height: 4rem;
+    margin-top: -.6rem;
     margin-left: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     display: block;
     border: 0;
     cursor: pointer;
@@ -152,5 +152,8 @@ tr {
         width: 1.6rem;
         margin-top: 0rem;
         margin-bottom: 0rem;
+    }
+    .hider {
+        height: 3rem;
     }
 }
