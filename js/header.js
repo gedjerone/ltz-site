@@ -30,7 +30,12 @@ class Header {
         var formatter = new Intl.DateTimeFormat('ru-RU', options);
         let lipDate = formatter.format(now);
         alert(lipDate);
-        let lipDateArr = lipDate.split('г., ');
+        var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
+        if (is_ios == true) {
+            var lipDateArr = lipDate.split('г. в ');
+        } else {
+            var lipDateArr = lipDate.split('г., ');
+        }
         lipDateArr.toString();
         let time_1 = lipDateArr[0];
         let time_2 = lipDateArr[1];
