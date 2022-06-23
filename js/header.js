@@ -28,7 +28,7 @@ class Header {
         };
         var formatter = new Intl.DateTimeFormat('ru-RU', options);
         let lipDate = formatter.format(now);
-        alert("PIDOR");
+        alert("PIDORIUS");
         alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
         alert(is_ios);
@@ -46,7 +46,7 @@ class Header {
                 }
                 if (lipdata[i] == 'в' && lipdata[i - 2] == '.') {
                     console.log(lipdata[i])
-                    for (var k = i + 1; k < lipdata.length - 1; k++) {
+                    for (var k = i + 1; k < lipdata.length; k++) {
                         time_2 += lipdata[k];
                         console.log(lipdata[k])
                     }
