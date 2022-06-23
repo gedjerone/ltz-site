@@ -32,7 +32,6 @@ class Header {
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
         alert(is_ios);
         var lipdata = lipDate.toString();
-        alert(lipdata);
         if (is_ios == true) {
             var [time_1, time_2] = lipdata.split("г. в ");
             console.log(time_1)
