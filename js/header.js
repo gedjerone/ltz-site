@@ -28,6 +28,7 @@ class Header {
         };
         var formatter = new Intl.DateTimeFormat('ru-RU', options);
         let lipDate = formatter.format(now);
+        alert("PIDOR");
         alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
         alert(is_ios);
