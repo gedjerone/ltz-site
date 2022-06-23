@@ -45,7 +45,7 @@ class Header {
                 }
                 if (lipdata[i] == 'в' && lipdata[i - 2] == '.') {
                     console.log(lipdata[i])
-                    for (var k = i + 1; k < lipdata.length + 1; k++) {
+                    for (var k = i + 1; k < lipdata.length - 1; k++) {
                         time_2 += lipdata[k];
                         console.log(lipdata[k])
                     }
