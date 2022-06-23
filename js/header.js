@@ -34,15 +34,12 @@ class Header {
         var lipdata = lipDate.toString();
         alert(lipdata);
         if (is_ios == true) {
-            var lipDateArr = lipdata.split('г. в ');
+            var [time_1, time_2] = lipdata.split("г. в ");
+            console.log(time_1)
+            console.log(time_2)
         } else {
-            var lipDateArr = lipdata.split('г., ');
+            var [time_1, time_2] = lipdata.split('г., ');
         }
-        alert(lipDateArr);
-        alert(lipDateArr[0]);
-        alert(lipDateArr[1]);
-        let time_1 = lipDateArr[0];
-        let time_2 = lipDateArr[1];
         alert(time_1);
         alert(time_2);
         const html_time = `
