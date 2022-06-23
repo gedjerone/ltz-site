@@ -30,6 +30,7 @@ class Header {
         let lipDate = formatter.format(now);
         alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
+        alert(is_ios);
         if (is_ios == true) {
             var lipDateArr = lipDate.split('г. в ');
         } else {
