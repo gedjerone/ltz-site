@@ -34,9 +34,14 @@ class Header {
         let time_2 = lipDateArr[1];
         time_1.toString();
         time_2.toString();
-        const html_time = `
+        /*const html_time = `
         <br>
          ${time_1}<b>${time_2}</b>
+        </br>
+        `*/
+        const html_time = `
+        <br>
+        23 июня 2022 <b>21:00</b>
         </br>
         `
 
