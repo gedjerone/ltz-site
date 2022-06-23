@@ -1,8 +1,52 @@
 class Header {
 
-    render() {
+    get_time_z() {
+        const request = new XMLHttpRequest();
+        const url = "server/lip_time.php?time=now"
+        request.open('GET', url, true);
+        request.responseType = "string";
+        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        request.addEventListener("readystatechange", () => {
+
+            if (request.readyState === 4 && request.status === 200) {
+                console.log(request.response);
+                this.render(request.response);
+            }
+        });
+        request.send();
+    }
+
+    get_time() {
+        var now = new Date()
+        var options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            timeZone: "Europe/Moscow"
+        };
+        let formatter = new Intl.DateTimeFormat('ru-RU', options);
+        let lipDate = formatter.format(now);
+        let lipDateArr = lipDate.split('г., ');
+        lipDateArr.toString();
+        let time_1 = lipDateArr[0];
+        let time_2 = lipDateArr[1];
+        time_1.toString();
+        time_2.toString();
+        const html_time = `
+        <br>
+         ${time_1}<b>${time_2}</b>
+        </br>
+        `
+
+        console.log(html_time)
+        return html_time;
+    }
+
+    render(html_time) {
         const html = `
-    <div class="navbar">
+        <div class="navbar">
             <div class="top_header">
                 <div class="logo">
                     <a href="index.html">
@@ -12,21 +56,7 @@ class Header {
                 <div class="lip_date">
                     <p>&mdash;&mdash;&mdash;СЕЙЧАС В ЛИПЕЦКЕ&mdash;&mdash;&mdash;</p>
                     <font class="date_time">
-                        <script>
-                            var now = new Date()
-                            var options = {
-                                year: 'numeric',
-                                month: 'long',
-                                day: 'numeric',
-                                hour: 'numeric',
-                                minute: 'numeric',
-                                timeZone: "Europe/Moscow"
-                            };
-                            let formatter = new Intl.DateTimeFormat('ru-RU', options);
-                            let lipDate = formatter.format(now);
-                            lipDateArr = lipDate.split(' г., ');
-                            document.write("<br>" + lipDateArr[0] + " <b>" + lipDateArr[1] + "</b></br>");
-                        </script>
+                        ${html_time}
                     </font>
                 </div>
                 <div class="contacts">
@@ -71,11 +101,11 @@ class Header {
                 </ul>
             </ul>
         </div>
-    `
-
+        `
+        console.log()
         document.querySelector("body > header").innerHTML = html;
     }
 }
 
 const header = new Header();
-header.render();
+header.render(header.get_time());
