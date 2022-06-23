@@ -35,17 +35,19 @@ class Header {
         } else {
             var lipDateArr = lipDate.split('г., ');
         }
-        lipDateArr.toString();
         let time_1 = lipDateArr[0];
         let time_2 = lipDateArr[1];
         time_1.toString();
         time_2.toString();
+        alert(time_1);
+        alert(time_2);
         const html_time = `
             <br>
                 ${time_1}<b>${time_2}</b>
             </br>
         `
-        console.log(html_time)
+        alert(html_time);
+        console.log(html_time);
         return html_time;
     }
 
