@@ -26,6 +26,7 @@ class Header {
             minute: 'numeric',
             timeZone: 'Europe/Moscow'
         };
+        alert(now);
         var formatter = new Intl.DateTimeFormat('ru-RU', 'Europe/Moscow');
         let lipDate = formatter.format(now);
         alert(lipDate);
