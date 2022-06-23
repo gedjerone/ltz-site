@@ -108,4 +108,5 @@ class Header {
 }
 
 const header = new Header();
-header.render(header.get_time());
+const now = header.get_time();
+header.render();
