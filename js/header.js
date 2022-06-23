@@ -24,10 +24,9 @@ class Header {
             day: 'numeric',
             hour: 'numeric',
             minute: 'numeric',
-            timeZone: 'Europe/Moscow'
         };
         alert(now);
-        var formatter = new Intl.DateTimeFormat('ru-RU', 'Europe/Moscow');
+        var formatter = new Intl.DateTimeFormat('ru-RU', 'Europe/Moscow', options);
         let lipDate = formatter.format(now);
         alert(lipDate);
         let lipDateArr = lipDate.split('г., ');
