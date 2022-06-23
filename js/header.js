@@ -36,6 +36,7 @@ class Header {
         } else {
             var lipDateArr = lipDate.split('г., ');
         }
+        alert(lipDateArr);
         let time_1 = lipDateArr[0];
         let time_2 = lipDateArr[1];
         time_1.toString();
