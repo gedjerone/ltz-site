@@ -31,16 +31,18 @@ class Header {
         alert(lipDate);
         var is_ios = /(iPhone|iPod|iPad).*AppleWebKit.*Safari/i.test(navigator.userAgent);
         alert(is_ios);
+        var lipdata = lipDate.toString();
+        alert(lipdata);
         if (is_ios == true) {
-            var lipDateArr = lipDate.split('г. в ');
+            var lipDateArr = lipdata.split('г. в ');
         } else {
-            var lipDateArr = lipDate.split('г., ');
+            var lipDateArr = lipdata.split('г., ');
         }
         alert(lipDateArr);
+        alert(lipDateArr[0]);
+        alert(lipDateArr[1]);
         let time_1 = lipDateArr[0];
         let time_2 = lipDateArr[1];
-        time_1.toString();
-        time_2.toString();
         alert(time_1);
         alert(time_2);
         const html_time = `
