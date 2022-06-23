@@ -1,3 +1,18 @@
+const CATEGORIES = [
+    "Каталоги",
+    "Стекла",
+    "Кабина",
+    "Узлы_и_агрегаты",
+    "ПД",
+    "Прочее",
+    "Сальники_прокладки",
+    "Ремкомплекты",
+    "Т-40_ЛТЗ_Запасные_части",
+    "Д-144_двигатель_в_сборе",
+    "Электрооборудование",
+    "Комплекты_прокладок_Д-144",
+    "Д-144_Запасные_части"
+]
 class Products {
 
     render() {
@@ -17,7 +32,7 @@ class Products {
 
         CATALOG.forEach(({ id, category, weight, catalog_id, title, price }) => {
 
-            if (category == "Каталоги") {
+            if (category == CATEGORIES[0]) {
                 htmlCatalog_Catalogs += `
                 <tr class="Каталоги" id="Каталоги">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -34,7 +49,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Стекла") {
+            } else if (category == CATEGORIES[1]) {
                 htmlCatalog_Glass += `
                 <tr class="Стекла" id="Стекла">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -51,7 +66,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Кабина") {
+            } else if (category == CATEGORIES[2]) {
                 htmlCatalog_Cab += `
                 <tr class="Кабина" id="Кабина">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -68,7 +83,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Узлы_и_агрегаты") {
+            } else if (category == CATEGORIES[3]) {
                 htmlCatalog_Agreg += `
                 <tr class="Узлы_и_агрегаты" id="Узлы_и_агрегаты">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -85,7 +100,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "ПД") {
+            } else if (category == CATEGORIES[4]) {
                 htmlCatalog_PD += `
                 <tr class="ПД" id="ПД">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -102,7 +117,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Прочее") {
+            } else if (category == CATEGORIES[5]) {
                 htmlCatalog_Other += `
                 <tr class="Прочее" id="Прочее">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -119,7 +134,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Сальники_прокладки") {
+            } else if (category == CATEGORIES[6]) {
                 htmlCatalog_Sal += `
                 <tr class="Сальники_прокладки" id="Сальники_прокладки">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -136,7 +151,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Ремкомплекты") {
+            } else if (category == CATEGORIES[7]) {
                 htmlCatalog_Kits += `
                 <tr class="Ремкомплекты" id="Ремкомплекты">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -153,7 +168,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Т-40_ЛТЗ_Запасные_части") {
+            } else if (category == CATEGORIES[8]) {
                 htmlCatalog_T40LTZ_Parts += `
                 <tr class="Т-40_ЛТЗ_Запасные_части" id="Т-40_ЛТЗ_Запасные_части">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -170,7 +185,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Д-144_двигатель_в_сборе") {
+            } else if (category == CATEGORIES[9]) {
                 htmlCatalog_D144_Engine += `
                 <tr class="Д-144_двигатель_в_сборе" id="Д-144_двигатель_в_сборе">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -187,7 +202,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Электрооборудование") {
+            } else if (category == CATEGORIES[10]) {
                 htmlCatalog_Electr += `
                 <tr class="Электрооборудование" id="Электрооборудование">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -204,7 +219,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Комплекты_прокладок_Д-144") {
+            } else if (category == CATEGORIES[11]) {
                 htmlCatalog_D144_Prok += `
                 <tr class="Комплекты_прокладок_Д-144" id="Комплекты_прокладок_Д-144">
                     <td scope="row" data-label="Вес">${weight}</td>
@@ -221,7 +236,7 @@ class Products {
                     </td>  
                 </tr>              
                 `;
-            } else if (category == "Д-144_Запасные_части") {
+            } else if (category == CATEGORIES[12]) {
                 htmlCatalog_D144_Parts += `
                 <tr class="Д-144_Запасные_части" id="Д-144_Запасные_части">
                     <td scope="row" data-label="Вес">${weight}</td>
