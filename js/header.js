@@ -17,65 +17,29 @@ class Header {
     }
 
     get_time() {
-        try {
-            var now = new Date();
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            var options = {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: 'numeric',
-                timeZone: "Europe/Moscow"
-            };
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            let formatter = new Intl.DateTimeFormat('ru-RU', options);
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            let lipDate = formatter.format(now);
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            let lipDateArr = lipDate.split('г., ');
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            lipDateArr.toString();
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            let time_1 = lipDateArr[0];
-            let time_2 = lipDateArr[1];
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            time_1.toString();
-            time_2.toString();
-        } catch (error) {
-            alert(error);
-        }
-        try {
-            const html_time = `
-        <br>
-         ${time_1}<b>${time_2}</b>
-        </br>
+        var now = new Date();
+        var options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            timeZone: 'Europe/Moscow'
+        };
+        var formatter = new Intl.DateTimeFormat('ru-RU', 'Europe/Moscow');
+        let lipDate = formatter.format(now);
+        alert(lipDate);
+        let lipDateArr = lipDate.split('г., ');
+        lipDateArr.toString();
+        let time_1 = lipDateArr[0];
+        let time_2 = lipDateArr[1];
+        time_1.toString();
+        time_2.toString();
+        const html_time = `
+            <br>
+                ${time_1}<b>${time_2}</b>
+            </br>
         `
-        } catch (error) {
-            alert(error);
-        }
-
         console.log(html_time)
         return html_time;
     }
