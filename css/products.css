@@ -91,7 +91,6 @@ tr {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    color: #ea121e;
     background-color: #eee;
     border: 1px solid #bdbdbd;
     margin-left: 0;
@@ -102,7 +101,17 @@ tr {
     transition: all .4s;
 }
 
-.text-field__btn:hover {
+.invalid_btn {}
+
+.invalid_btn:hover {
+    background-color: rgb(214, 213, 213);
+}
+
+.valid_btn {
+    color: #ea121e;
+}
+
+.valid_btn:hover {
     background-color: #dd131d;
     color: #fff;
 }
@@ -121,6 +130,14 @@ tr {
     border: 1px solid #bdbdbd;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.invalid_field {
+    border: 1px solid #ea121e;
+}
+
+.valid_field {
+    border: 1px solid #00fc2a;
 }
 
 .text-field__group .text-field__input {
