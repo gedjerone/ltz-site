@@ -28,9 +28,13 @@
     margin: 0;
 }
 
-.right_inner {
-    float: right;
-    margin-right: 15px;
+.right_inner#desktop {
+    float: left;
+    margin-left: 15px;
+}
+
+.right_inner#tablet {
+    display: none;
 }
 
 .left_inner {
@@ -80,9 +84,14 @@
         border-right: none;
         float: none;
     }
-    .right_inner {
+    .right_inner#desktop {
+        display: none;
+    }
+    .right_inner#tablet {
+        display: block;
         border-right: none;
         float: none;
+        margin-right: 0;
     }
     .h_top p {
         margin-top: 10px;
