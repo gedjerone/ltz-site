@@ -28,6 +28,7 @@ header {
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 0px;
+    margin-right: 15px;
 }
 
 .top_header .lip_date>.date_time {
