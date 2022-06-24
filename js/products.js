@@ -42,8 +42,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -59,8 +59,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -76,8 +76,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -93,8 +93,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -110,8 +110,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -127,8 +127,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -144,8 +144,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -161,8 +161,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -178,8 +178,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -195,8 +195,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -212,8 +212,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -229,8 +229,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
@@ -246,8 +246,8 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
-                                <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                                <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <input class="text-field__input invalid_field" type="add" id="add" name="add" placeholder="Количество">
+                                <button class="text-field__btn invalid_btn" type="button">Добавить в корзину</button>
                             </div>
                         </div>
                     </td>  
