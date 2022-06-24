@@ -27,6 +27,7 @@ input {
     font-weight: 900;
     text-align: center;
     transition: all .4s;
+    background-color: #fff;
 }
 
 .category td:hover {
@@ -36,9 +37,9 @@ input {
 
 .hider {
     position: absolute;
-    width: 95%;
-    height: 4rem;
-    margin-top: -.6rem;
+    width: 94vw;
+    height: 4.2rem;
+    margin-top: -.65rem;
     margin-left: 0;
     margin-bottom: 0rem;
     display: block;
@@ -65,7 +66,6 @@ input {
     background-image: url('img/icons8-chevron-up-48.png');
     transform-origin: 60% 50%;
     transition: all .3s ease-in-out;
-    /*transform: rotate(180deg);*/
 }
 
 .disabled {
@@ -94,6 +94,7 @@ tr {
     color: #ea121e;
     background-color: #eee;
     border: 1px solid #bdbdbd;
+    margin-left: 0;
     /*padding: .375rem .75rem;*/
     font-size: .8rem;
     border-radius: .25rem;
@@ -155,5 +156,6 @@ tr {
     }
     .hider {
         height: 3rem;
+        width: 91vw
     }
 }
