@@ -101,18 +101,25 @@ tr {
     transition: all .4s;
 }
 
-.invalid_btn {}
+.text-field__btn:hover {
+    background-color: rgb(214, 213, 213);
+}
+
+.invalid_btn {
+    color: #ea121e;
+}
 
 .invalid_btn:hover {
     background-color: rgb(214, 213, 213);
 }
 
 .valid_btn {
-    color: #ea121e;
+    background-color: #ea121e;
+    color: #fff;
 }
 
 .valid_btn:hover {
-    background-color: #dd131d;
+    background-color: #ca131c;
     color: #fff;
 }
 
