@@ -14,7 +14,6 @@ const CATEGORIES = [
     "Д-144_Запасные_части"
 ]
 class Products {
-
     render() {
         let htmlCatalog_Catalogs = '';
         let htmlCatalog_Glass = '';
