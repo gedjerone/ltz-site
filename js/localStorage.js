@@ -109,21 +109,13 @@ class LocalStorageUtil {
         CATALOG.forEach(({ id, weight, catalog_id, title, price }) => {
             if (id_product == id) {
                 productsId.push(id);
-                console.log(id);
                 productsCount.push(count);
-                console.log(count);
                 productsPrice.push(price);
-                console.log(price);
                 productsWeight.push(weight);
-                console.log(weight);
                 productsPriceSum.push(count * price);
-                console.log(count * price);
                 productsWeightSum.push(count * weight);
-                console.log(count * weight);
                 productsCatalogId.push(catalog_id);
-                console.log(catalog_id);
                 productsTitle.push(title);
-                console.log(title);
             }
         });
 
@@ -174,6 +166,26 @@ class LocalStorageUtil {
             }
         });
     }
+
+    getProductsAllContent() {
+        let productsId = this.getProductsId();
+        let productsCount = this.getProductsCount();
+        let productsPrice = this.getProductsPrice();
+        let productsWeight = this.getProductsWeight();
+        let productsPriceSum = this.getProductsPriceSum();
+        let productsWeightSum = this.getProductsWeightSum();
+        let productsCatalogId = this.getProductsCatalogId();
+        let productsTitle = this.getProductsTitle();
+        arr [productsId, productsCount, productsPrice, productsWeight, productsPriceSum, productsWeightSum, productsCatalogId, productsTitle]
+        return arr;
+    }
+
+    reload() {
+        header.render(header.get_time(), this.getAllProductsPriceSum(), this.getAllProductsWeightSum());
+        cart.render();
+    }
+
 }
 
 const localStorageUtil = new LocalStorageUtil();
+
