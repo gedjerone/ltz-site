@@ -17,6 +17,22 @@ header {
     display: none;
 }
 
+.cart_stats {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.cart_stats p {
+    font-family: Arial, sans-serif;
+    color: #e70e19;
+    font-size: .9rem;
+    line-height: 1rem;
+    font-weight: 600;
+    font-kerning: none;
+    margin: 0;
+    text-align: left;
+}
+
 .top_header>.lip_date {
     display: block;
     align-self: center;
@@ -92,7 +108,7 @@ header a:hover {
 }
 
 header ul .cart_li:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 header .menu_nav {
