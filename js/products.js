@@ -42,8 +42,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -59,8 +61,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -76,8 +80,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -93,8 +99,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -110,8 +118,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -127,8 +137,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -144,8 +156,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -161,8 +175,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -178,8 +194,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -195,8 +213,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -212,8 +232,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -229,8 +251,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
@@ -246,8 +270,10 @@ class Products {
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
+                                <div class="hidden_id">${id}</div>
                                 <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
                                 <button class="text-field__btn" type="button">Добавить в корзину</button>
+                                <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
                             </div>
                         </div>
                     </td>  
