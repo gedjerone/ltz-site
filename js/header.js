@@ -84,28 +84,28 @@ class Header {
                     <a href="cart.html">
                         <img src="img/shopping-cart-small.png" alt="">
                         <div class="cart_stats">
-                                <p>${price} ₽</p>
-                                <p>${weight} кг</p>
+                                <p>${price.toLocaleString()} ₽</p>
+                                <p>${weight.toFixed(3)} кг</p>
                         </div>
                     </a>
                 </li>
             </ul>
             <ul class="menu_nav">
                 <ul class="menu_1">
-                    <li><a href="index.html">ГЛАВНАЯ</a></li>
-                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    <li id="menu_1-1"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li id="menu_1-2"><a href="contacts.html">КОНТАКТЫ</a></li>
                 </ul>
                 <ul class="menu_2">
-                    <li><a href="products.html">ПРОДУКЦИЯ</a></li>
-                    <li><a href="shipping.html">ДОСТАВКА</a></li>
+                    <li id="menu_2-1"><a href="products.html">ПРОДУКЦИЯ</a></li>
+                    <li id="menu_2-2"><a href="shipping.html">ДОСТАВКА</a></li>
                 </ul>
                 <ul class="menu_3">
                     <li class="cart_li">
                         <a href="cart.html">
                             <img src="img/shopping-cart-small.png" alt="">
                             <div class="cart_stats">
-                                <p>${price} ₽</p>
-                                <p>${weight} кг</p>
+                                <p>${price.toLocaleString()} ₽</p>
+                                <p>${weight.toFixed(3)} кг</p>
                             </div>
                         </a>
                     </li>
@@ -121,3 +121,4 @@ class Header {
 const header = new Header();
 const now = header.get_time();
 header.render(now, 0, 0);
+localStorageUtil.reload();
