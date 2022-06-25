@@ -77,6 +77,16 @@ tr {
 }
 
 
+/*.hidden_th,
+.hidden_tr {
+    display: none;
+}*/
+
+.hidden_id {
+    display: none;
+}
+
+
 /* кнопка */
 
 .text-field__btn {
@@ -113,12 +123,47 @@ tr {
     background-color: rgb(214, 213, 213);
 }
 
-.valid_btn {
+.text-field__btn_hide {
+    display: none;
+}
+
+
+/*.valid_btn {
     background-color: #ea121e;
     color: #fff;
 }
 
 .valid_btn:hover {
+    background-color: #ca131c;
+    color: #fff;
+}*/
+
+.text-field__btn_2 {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #ea121e;
+    color: #fff;
+    border: 1px solid #bdbdbd;
+    margin-left: 0;
+    font-size: .8rem;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out;
+    transition: all .4s;
+}
+
+.text-field__btn_2_hide {
+    display: none;
+}
+
+.text-field__btn_2:hover {
     background-color: #ca131c;
     color: #fff;
 }
