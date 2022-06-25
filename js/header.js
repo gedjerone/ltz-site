@@ -41,7 +41,13 @@ class Header {
         return html_time;
     }
 
-    render(html_time) {
+    get_cart() {
+        localStorageUtil.getAllProductsPriceSum();
+
+    }
+
+    render(html_time, price, weight) {
+
         const html = `
         <div class="navbar">
             <div class="top_header">
@@ -77,6 +83,10 @@ class Header {
                 <li class="cart_li">
                     <a href="cart.html">
                         <img src="img/shopping-cart-small.png" alt="">
+                        <div class="cart_stats">
+                                <p>${price} ₽</p>
+                                <p>${weight} кг</p>
+                        </div>
                     </a>
                 </li>
             </ul>
@@ -93,6 +103,10 @@ class Header {
                     <li class="cart_li">
                         <a href="cart.html">
                             <img src="img/shopping-cart-small.png" alt="">
+                            <div class="cart_stats">
+                                <p>${price} ₽</p>
+                                <p>${weight} кг</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -106,4 +120,4 @@ class Header {
 
 const header = new Header();
 const now = header.get_time();
-header.render(now);
+header.render(now, 0, 0);
