@@ -82,6 +82,37 @@ table td:not(:last-child) {
     margin-right: 35%;
 }
 
+.hidden_id {
+    display: none;
+}
+
+.cart_remove__btn {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #ea121e;
+    color: #fff;
+    border: 1px solid #bdbdbd;
+    margin-left: 0;
+    font-size: .8rem;
+    border-radius: .25rem;
+    transition: background-color .15s ease-in-out;
+    transition: all .4s;
+    width: 10rem;
+}
+
+.cart_remove__btn:hover {
+    background-color: #ca131c;
+    color: #fff;
+}
+
 
 /*MODAL WINDOW*/
 
