@@ -176,16 +176,22 @@ class LocalStorageUtil {
         let productsWeightSum = this.getProductsWeightSum();
         let productsCatalogId = this.getProductsCatalogId();
         let productsTitle = this.getProductsTitle();
-        arr [productsId, productsCount, productsPrice, productsWeight, productsPriceSum, productsWeightSum, productsCatalogId, productsTitle]
+
+        let counter = 0;
+        let arr = [];
+
+        productsId.forEach(element => {
+            arr.push([productsId[counter], productsCount[counter], productsPrice[counter], productsWeight[counter], productsPriceSum[counter], productsWeightSum[counter], productsCatalogId[counter], productsTitle[counter]]);
+            counter += 1;
+        });
+
         return arr;
     }
 
     reload() {
         header.render(header.get_time(), this.getAllProductsPriceSum(), this.getAllProductsWeightSum());
-        cart.render();
     }
 
 }
 
 const localStorageUtil = new LocalStorageUtil();
-
