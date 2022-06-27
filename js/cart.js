@@ -41,6 +41,7 @@ class Cart {
                 ${html_cart}
             </tbody>
         </table>
+        <a href="#" class="js-open-modal btn" data-modal="1">Отправить заказ на email</a>
         `;
         document.getElementById('cart_content').innerHTML = cart_html;
         var newScript = document.createElement("script");
