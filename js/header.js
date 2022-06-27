@@ -113,7 +113,6 @@ class Header {
             </ul>
         </div>
         `
-        console.log()
         document.querySelector("body > header").innerHTML = html;
     }
 }
