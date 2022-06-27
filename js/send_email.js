@@ -1,18 +1,3 @@
-var modal = document.querySelectorAll('.modal');
-
-function send_email() {
-    alert("Отправленно!");
-    console.log("Отправленно");
-}
-
-modal.forEach(element => {
-    element.addEventListener("click", function(event) {
-        if (event.target.closest('.btn')) {
-            send_email();
-        }
-    });
-});
-
 ! function(e) {
     "function" != typeof e.matches && (e.matches = e.msMatchesSelector || e.mozMatchesSelector || e.webkitMatchesSelector || function(e) {
         for (var t = this, o = (t.document || t.ownerDocument).querySelectorAll(e), n = 0; o[n] && o[n] !== t;) ++n;
@@ -64,3 +49,71 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }, false);
 }); // end ready
+
+//SMTP
+
+/* SmtpJS.com - v3.0.0 */
+var Email = {
+    send: function(a) {
+        return new Promise(function(n, e) {
+            a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send";
+            var t = JSON.stringify(a);
+            Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function(e) { n(e) })
+        })
+    },
+    ajaxPost: function(e, n, t) {
+        var a = Email.createCORSRequest("POST", e);
+        a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function() {
+            var e = a.responseText;
+            null != t && t(e)
+        }, a.send(n)
+    },
+    ajax: function(e, n) {
+        var t = Email.createCORSRequest("GET", e);
+        t.onload = function() {
+            var e = t.responseText;
+            null != n && n(e)
+        }, t.send()
+    },
+    createCORSRequest: function(e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t }
+};
+
+//SMTP
+
+var modal = document.querySelectorAll('.modal');
+
+function emailTest(input) {
+    var regularExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regularExpression.test(input.value);
+}
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "order@mail.ru",
+        Password: "78B0EADDBB702211C298C64C40636D239D45",
+        To: "order@mail.ru",
+        From: 'order@elasticemail.com',
+        Subject: "Заказ запасных частей",
+        Body: "Email: " + document.querySelector('.user_email').value
+    }).then(
+        message => alert("Отправленно успешно!")
+    );
+}
+
+function send_validate() {
+    let userEmail = document.querySelector('.user_email');
+    if (!emailTest(userEmail)) {
+        alert("Введите email правильно!");
+    } else {
+        sendEmail();
+    }
+}
+
+modal.forEach(element => {
+    element.addEventListener("click", function(event) {
+        if (event.target.closest('.btn')) {
+            send_validate();
+        }
+    });
+});
