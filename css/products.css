@@ -10,6 +10,7 @@ body {
 
 .content {
     flex: 1 1 auto;
+    margin-bottom: 20px;
 }
 
 input {
