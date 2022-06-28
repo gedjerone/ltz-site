@@ -64,6 +64,14 @@ header {
 
 /*NAVIGATION BAR*/
 
+header .menu {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
 header ul {
     padding: 0;
     margin: 0;
