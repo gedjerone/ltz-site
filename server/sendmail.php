@@ -22,35 +22,20 @@
     $mail->Username = $address;
     $mail->Password = $password;
 
-    //От кого
     $mail->setFrom($address, $name = 'test', $auto = true);
-    //Кому
     $mail->addAddress($address, $name = 'test');
-    //Тема
     $mail->Subject = 'Заказ запасных частей';
-
-    //Тело письма
     $body = '<h1>Список запасных частей</h1>';
-
-    $body.='<p><strong>Email:</strong> '.$_POST['userEmail'].'</p>';
-    //$body.='<p><strong>Email:</strong> ХУЙ</p>';
+    $body.='<p><strong>Email заказчика:</strong> '.$_POST['userEmail'].'</p>';
+    $body.='<p><strong>Телефон заказчика:</strong> '.$_POST['userPhone'].'</p>';
+    $body.='<p><strong>ФИО заказчика:</strong> '.$_POST['userName'].'</p>';
+    $body.='<p><strong>Адрес заказчика:</strong> '.$_POST['userAddress'].'</p>';
+    $body.='<p><strong>Состав заказа:</strong></p>';
+    $body.=$_POST['cart'];
+    $body.='<p><strong>Общая цена заказа:</strong> '.$_POST['cart_price'].'</p>';
+    $body.='<p><strong>Общий вес заказа:</strong> '.$_POST['cart_weight'].'</p>';
 
     $mail->Body = $body;
-
-    //Отправка
-    /*if (!$mail->send()) {
-        $message = 'Ошибка';
-    } else {
-        $message = 'Отправлено!';
-    }*/
-
-    function console_log($data){ // сама функция
-        if(is_array($data) || is_object($data)){
-            echo("<script>console.log('php_array: ".json_encode($data)."');</script>");
-        } else {
-            echo("<script>console.log('php_string: ".$data."');</script>");
-        }
-    }
 
     try {
         $mail->send();
@@ -58,8 +43,6 @@
         print_r($e);
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     }
-
-    //$response = ['message' => $message];
 
     header('Content-type: application/json');
     echo json_encode($response);
