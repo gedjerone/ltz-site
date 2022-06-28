@@ -52,39 +52,67 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var modal = document.querySelectorAll('.modal');
 
+var field_gr = document.querySelectorAll('.text-field__group');
+
+/*var cart_inner = [];
+
+localStorageUtil.getProductsAllContent().forEach(element => {
+    cart_inner.push();
+});*/
+
+function remove(element, localStorageUtil) {
+    localStorageUtil.removeProducts(element.querySelector('.hidden_id').innerText);
+}
+
 function emailTest(input) {
     var regularExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regularExpression.test(input);
 }
 
-async function sendEmail(userEmail) {
-    let response = await fetch('server/sendmail.php', {
-        method: 'POST',
-        body: userEmail
-    });
-    if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
+function phoneTest(input) {
+    var regularExpression = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
+    return regularExpression.test(input);
+}
+
+function nameTest(input) {
+    if (input == "") {
+        return false;
     } else {
-        console.log(response);
-        console.log(response.body);
-        alert("Ошибка");
+        return true;
     }
 }
 
-function sender(userEmail) {
+function addressTest(input) {
+    if (input == "") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+var cart_contains = new Cart();
+var cart_price = localStorageUtil.getAllProductsPriceSum().toLocaleString() + ' ₽';
+var cart_weight = localStorageUtil.getAllProductsWeightSum().toFixed(3) + ' кг';
+
+function sender(userEmail, userPhone, userName, userAddress) {
     $.ajax({
         type: "POST",
         url: "server/sendmail.php",
         cache: false,
-        data: { 'userEmail': userEmail },
+        data: { 'userEmail': userEmail, 'userPhone': userPhone, 'userName': userName, 'userAddress': userAddress, 'cart': cart_contains.get_cart(), 'cart_price': cart_price, 'cart_weight': cart_weight },
         dataType: "html",
         success: function(data) {
             if (!data) {
                 alert("Ошибка!");
             } else {
-                alert("Всё ок!");
+                alert("Заказ отправлен на почту!");
             }
+        },
+        beforeSend: function() {
+            field_gr.forEach(element => {
+                remove(element, localStorageUtil);
+            });
+            cart.render();
         },
         error: function(error) {
             alert('error; ' + eval(error));
@@ -94,10 +122,13 @@ function sender(userEmail) {
 
 function send_validate() {
     var userEmail = document.querySelector('.user_email').value;
-    if (!emailTest(userEmail)) {
-        alert("Введите email правильно!");
+    var userPhone = document.querySelector('.user_phone').value;
+    var userName = document.querySelector('.user_name').value;
+    var userAddress = document.querySelector('.user_address').value;
+    if (!emailTest(userEmail) || !phoneTest(userPhone) || nameTest(userName) == false || addressTest(userAddress) == false) {
+        alert("Данные введены неверно!");
     } else {
-        sender(userEmail);
+        sender(userEmail, userPhone, userName, userAddress);
     }
 }
 
