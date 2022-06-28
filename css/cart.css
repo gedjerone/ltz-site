@@ -94,6 +94,7 @@ table td:not(:last-child) {
     margin-top: 20px;
     margin-left: 35%;
     margin-right: 35%;
+    margin-bottom: 20px;
 }
 
 .hidden_id {
