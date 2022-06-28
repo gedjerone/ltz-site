@@ -41,11 +41,6 @@ class Header {
         return html_time;
     }
 
-    get_cart() {
-        localStorageUtil.getAllProductsPriceSum();
-
-    }
-
     render(html_time, price, weight) {
 
         const html = `
