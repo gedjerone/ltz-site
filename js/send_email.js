@@ -50,63 +50,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }, false);
 }); // end ready
 
-//SMTP
-
-/* SmtpJS.com - v3.0.0 */
-var Email = {
-    send: function(a) {
-        return new Promise(function(n, e) {
-            a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send";
-            var t = JSON.stringify(a);
-            Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function(e) { n(e) })
-        })
-    },
-    ajaxPost: function(e, n, t) {
-        var a = Email.createCORSRequest("POST", e);
-        a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function() {
-            var e = a.responseText;
-            null != t && t(e)
-        }, a.send(n)
-    },
-    ajax: function(e, n) {
-        var t = Email.createCORSRequest("GET", e);
-        t.onload = function() {
-            var e = t.responseText;
-            null != n && n(e)
-        }, t.send()
-    },
-    createCORSRequest: function(e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t }
-};
-
-//SMTP
-
 var modal = document.querySelectorAll('.modal');
 
 function emailTest(input) {
     var regularExpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regularExpression.test(input.value);
+    return regularExpression.test(input);
 }
 
-function sendEmail() {
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "order@mail.ru",
-        Password: "78B0EADDBB702211C298C64C40636D239D45",
-        To: "order@mail.ru",
-        From: 'order@elasticemail.com',
-        Subject: "Заказ запасных частей",
-        Body: "Email: " + document.querySelector('.user_email').value
-    }).then(
-        message => alert("Отправленно успешно!")
-    );
+async function sendEmail(userEmail) {
+    let response = await fetch('server/sendmail.php', {
+        method: 'POST',
+        body: userEmail
+    });
+    if (response.ok) {
+        let result = await response.json();
+        alert(result.message);
+    } else {
+        console.log(response);
+        console.log(response.body);
+        alert("Ошибка");
+    }
+}
+
+function sender(userEmail) {
+    $.ajax({
+        type: "POST",
+        url: "server/sendmail.php",
+        cache: false,
+        data: { 'userEmail': userEmail },
+        dataType: "html",
+        success: function(data) {
+            if (!data) {
+                alert("Ошибка!");
+            } else {
+                alert("Всё ок!");
+            }
+        },
+        error: function(error) {
+            alert('error; ' + eval(error));
+        }
+    });
 }
 
 function send_validate() {
-    let userEmail = document.querySelector('.user_email');
+    var userEmail = document.querySelector('.user_email').value;
     if (!emailTest(userEmail)) {
         alert("Введите email правильно!");
     } else {
-        sendEmail();
+        sender(userEmail);
     }
 }
 
