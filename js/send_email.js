@@ -54,12 +54,6 @@ var modal = document.querySelectorAll('.modal');
 
 var field_gr = document.querySelectorAll('.text-field__group');
 
-/*var cart_inner = [];
-
-localStorageUtil.getProductsAllContent().forEach(element => {
-    cart_inner.push();
-});*/
-
 function remove(element, localStorageUtil) {
     localStorageUtil.removeProducts(element.querySelector('.hidden_id').innerText);
 }
