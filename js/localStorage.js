@@ -96,40 +96,6 @@ class LocalStorageUtil {
         return [];
     }
 
-    putProducts(id_product, count) {
-        let productsId = this.getProductsId();
-        let productsCount = this.getProductsCount();
-        let productsPrice = this.getProductsPrice();
-        let productsWeight = this.getProductsWeight();
-        let productsPriceSum = this.getProductsPriceSum();
-        let productsWeightSum = this.getProductsWeightSum();
-        let productsCatalogId = this.getProductsCatalogId();
-        let productsTitle = this.getProductsTitle();
-
-        CATALOG.forEach(({ id, weight, catalog_id, title, price }) => {
-            if (id_product == id) {
-                productsId.push(id);
-                productsCount.push(count);
-                productsPrice.push(price);
-                productsWeight.push(weight);
-                productsPriceSum.push(count * price);
-                productsWeightSum.push(count * weight);
-                productsCatalogId.push(catalog_id);
-                productsTitle.push(title);
-            }
-        });
-
-        localStorage.setItem(this.keyId, JSON.stringify(productsId));
-        localStorage.setItem(this.keyCount, JSON.stringify(productsCount));
-        localStorage.setItem(this.keyPrice, JSON.stringify(productsPrice));
-        localStorage.setItem(this.keyWeight, JSON.stringify(productsWeight));
-        localStorage.setItem(this.keyPriceSum, JSON.stringify(productsPriceSum));
-        localStorage.setItem(this.keyWeightSum, JSON.stringify(productsWeightSum));
-        localStorage.setItem(this.keyCatalogId, JSON.stringify(productsCatalogId));
-        localStorage.setItem(this.keyTitle, JSON.stringify(productsTitle));
-        header.render(header.get_time(), this.getAllProductsPriceSum(), this.getAllProductsWeightSum());
-    }
-
     removeProducts(id) {
         let productsId = this.getProductsId();
         let productsCount = this.getProductsCount();
@@ -186,6 +152,74 @@ class LocalStorageUtil {
         });
 
         return arr;
+    }
+
+    chechExists(id_product) {
+        let productsId = this.getProductsId();
+
+        let counter = 0;
+        let ext = 0;
+
+        productsId.forEach(element => {
+            if (productsId[counter] == id_product) {
+                ext = 1;
+            } else {
+                counter += 1;
+            }
+        });
+
+        if (ext == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    putProducts(id_product, count) {
+        let productsId = this.getProductsId();
+        let productsCount = this.getProductsCount();
+        let productsPrice = this.getProductsPrice();
+        let productsWeight = this.getProductsWeight();
+        let productsPriceSum = this.getProductsPriceSum();
+        let productsWeightSum = this.getProductsWeightSum();
+        let productsCatalogId = this.getProductsCatalogId();
+        let productsTitle = this.getProductsTitle();
+
+        let counter = 0;
+
+        if (this.chechExists(id_product) == true) {
+            productsId.forEach(element => {
+                if (productsId[counter] == id_product) {
+                    productsCount[counter] = Number(productsCount[counter]) + Number(count);
+                    productsPriceSum[counter] += count * productsPrice[counter];
+                    productsWeightSum[counter] += count * productsWeight[counter];
+                }
+                counter += 1;
+            });
+        } else {
+            CATALOG.forEach(({ id, weight, catalog_id, title, price }) => {
+                if (id_product == id) {
+                    productsId.push(id);
+                    productsCount.push(count);
+                    productsPrice.push(price);
+                    productsWeight.push(weight);
+                    productsPriceSum.push(count * price);
+                    productsWeightSum.push(count * weight);
+                    productsCatalogId.push(catalog_id);
+                    productsTitle.push(title);
+                }
+            });
+        }
+
+        localStorage.setItem(this.keyId, JSON.stringify(productsId));
+        localStorage.setItem(this.keyCount, JSON.stringify(productsCount));
+        localStorage.setItem(this.keyPrice, JSON.stringify(productsPrice));
+        localStorage.setItem(this.keyWeight, JSON.stringify(productsWeight));
+        localStorage.setItem(this.keyPriceSum, JSON.stringify(productsPriceSum));
+        localStorage.setItem(this.keyWeightSum, JSON.stringify(productsWeightSum));
+        localStorage.setItem(this.keyCatalogId, JSON.stringify(productsCatalogId));
+        localStorage.setItem(this.keyTitle, JSON.stringify(productsTitle));
+        header.render(header.get_time(), this.getAllProductsPriceSum(), this.getAllProductsWeightSum());
     }
 
     reload() {
