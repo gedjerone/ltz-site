@@ -10,6 +10,8 @@ body {
 
 .content {
     flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .h1_name h1 {
