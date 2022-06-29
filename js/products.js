@@ -34,7 +34,7 @@ class Products {
             if (category == CATEGORIES[0]) {
                 htmlCatalog_Catalogs += `
                 <tr class="Каталоги" id="Каталоги">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -53,7 +53,7 @@ class Products {
             } else if (category == CATEGORIES[1]) {
                 htmlCatalog_Glass += `
                 <tr class="Стекла" id="Стекла">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -72,7 +72,7 @@ class Products {
             } else if (category == CATEGORIES[2]) {
                 htmlCatalog_Cab += `
                 <tr class="Кабина" id="Кабина">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -91,7 +91,7 @@ class Products {
             } else if (category == CATEGORIES[3]) {
                 htmlCatalog_Agreg += `
                 <tr class="Узлы_и_агрегаты" id="Узлы_и_агрегаты">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -110,7 +110,7 @@ class Products {
             } else if (category == CATEGORIES[4]) {
                 htmlCatalog_PD += `
                 <tr class="ПД" id="ПД">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -129,7 +129,7 @@ class Products {
             } else if (category == CATEGORIES[5]) {
                 htmlCatalog_Other += `
                 <tr class="Прочее" id="Прочее">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -148,7 +148,7 @@ class Products {
             } else if (category == CATEGORIES[6]) {
                 htmlCatalog_Sal += `
                 <tr class="Сальники_прокладки" id="Сальники_прокладки">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -167,7 +167,7 @@ class Products {
             } else if (category == CATEGORIES[7]) {
                 htmlCatalog_Kits += `
                 <tr class="Ремкомплекты" id="Ремкомплекты">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -186,7 +186,7 @@ class Products {
             } else if (category == CATEGORIES[8]) {
                 htmlCatalog_T40LTZ_Parts += `
                 <tr class="Т-40_ЛТЗ_Запасные_части" id="Т-40_ЛТЗ_Запасные_части">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -205,7 +205,7 @@ class Products {
             } else if (category == CATEGORIES[9]) {
                 htmlCatalog_D144_Engine += `
                 <tr class="Д-144_двигатель_в_сборе" id="Д-144_двигатель_в_сборе">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -224,7 +224,7 @@ class Products {
             } else if (category == CATEGORIES[10]) {
                 htmlCatalog_Electr += `
                 <tr class="Электрооборудование" id="Электрооборудование">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -243,7 +243,7 @@ class Products {
             } else if (category == CATEGORIES[11]) {
                 htmlCatalog_D144_Prok += `
                 <tr class="Комплекты_прокладок_Д-144" id="Комплекты_прокладок_Д-144">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
@@ -262,7 +262,7 @@ class Products {
             } else if (category == CATEGORIES[12]) {
                 htmlCatalog_D144_Parts += `
                 <tr class="Д-144_Запасные_части" id="Д-144_Запасные_части">
-                    <td scope="row" data-label="Вес">${weight}</td>
+                    <td scope="row" data-label="Вес">${weight.toFixed(3)}</td>
                     <td data-label="№ по каталогу">${catalog_id}</td>
                     <td data-label="Наименование">${title}</td>
                     <td data-label="Цена с НДС, руб">${price}</td>
