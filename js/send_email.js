@@ -115,10 +115,10 @@ function sender(userEmail, userPhone, userName, userAddress) {
 }
 
 function send_validate() {
-    var userEmail = document.querySelector('.user_email').value;
-    var userPhone = document.querySelector('.user_phone').value;
-    var userName = document.querySelector('.user_name').value;
-    var userAddress = document.querySelector('.user_address').value;
+    var userEmail = document.querySelector('.user_email').value.trim();
+    var userPhone = document.querySelector('.user_phone').value.trim();
+    var userName = document.querySelector('.user_name').value.trim();
+    var userAddress = document.querySelector('.user_address').value.trim();
     if (!emailTest(userEmail) || !phoneTest(userPhone) || nameTest(userName) == false || addressTest(userAddress) == false) {
         alert("Данные введены неверно!");
     } else {
