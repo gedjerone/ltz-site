@@ -6,8 +6,8 @@
     require 'PHPMailer-master/src/Exception.php';
     require 'PHPMailer-master/src/SMTP.php';
 
-    $address = 'antittter@mail.ru';
-    $password = 'Ohv05gRWqCHAYbBYrc12';
+    $address = 'fj18jz14x2d35jdx@mail.ru';
+    $password = 'nZWlyrT0rFn51yZnj9ND';
 
     $mail = new PHPMailer(true);
     $mail->SMTPDebug = true;
@@ -22,8 +22,8 @@
     $mail->Username = $address;
     $mail->Password = $password;
 
-    $mail->setFrom($address, $name = 'test', $auto = true);
-    $mail->addAddress($address, $name = 'test');
+    $mail->setFrom($address, $name = 'orders@ltz.ru', $auto = true);
+    $mail->addAddress($address, $name = 'orders@ltz.ru');
     $mail->Subject = 'Заказ запасных частей';
     $body = '<h1>Список запасных частей</h1>';
     $body.='<p><strong>Email заказчика:</strong> '.$_POST['userEmail'].'</p>';
@@ -41,7 +41,7 @@
         $mail->send();
     } catch(Exception $e) {
         print_r($e);
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
+        echo 'Mailer Error: '.$mail->ErrorInfo;
     }
 
     header('Content-type: application/json');
