@@ -9,10 +9,10 @@ class Cart {
                     <td scope="row" data-label="Вес/штука">${element[3].toFixed(3)}</td>
                     <td data-label="№ по каталогу">${element[6]}</td>
                     <td data-label="Наименование">${element[7]}</td>
-                    <td data-label="Цена с НДС, руб/штука">${element[2].toLocaleString()}</td>
+                    <td data-label="Цена, руб/штука">${element[2].toLocaleString()}</td>
                     <td data-label="Количество">${element[1]}</td>
                     <td data-label="Вес/итого">${element[5].toFixed(3)}</td>
-                    <td data-label="Цена с НДС, руб/итого">${element[4].toLocaleString()}</td>
+                    <td data-label="Цена, руб/итого">${element[4].toLocaleString()}</td>
                     <td data-label=" ">
                         <div class="counter">
                             <div class="text-field__group">
@@ -32,10 +32,10 @@ class Cart {
                     <th scope="col">Вес/штука</th>
                     <th scope="col">№ по каталогу</th>
                     <th scope="col">Наименование</th>
-                    <th scope="col">Цена с НДС, руб/штука</th>
+                    <th scope="col">Цена, руб/штука</th>
                     <th scope="col">Количество</th>
                     <th scope="col">Вес/итого</th>
-                    <th scope="col">Цена с НДС, руб/итого</th>
+                    <th scope="col">Цена, руб/итого</th>
                     <th scope="col"> </th>
                 </tr>
             </thead>
@@ -86,10 +86,10 @@ class Cart {
                     <td scope="row" data-label="Вес/штука">${element[3].toFixed(3)}</td>
                     <td data-label="№ по каталогу">${element[6]}</td>
                     <td data-label="Наименование">${element[7]}</td>
-                    <td data-label="Цена с НДС, руб/штука">${element[2].toLocaleString()}</td>
+                    <td data-label="Цена, руб/штука">${element[2].toLocaleString()}</td>
                     <td data-label="Количество">${element[1]}</td>
                     <td data-label="Вес/итого">${element[5].toFixed(3)}</td>
-                    <td data-label="Цена с НДС, руб/итого">${element[4].toLocaleString()}</td>
+                    <td data-label="Цена, руб/итого">${element[4].toLocaleString()}</td>
                 </tr>
             `
             cart_conter += 1;
@@ -101,10 +101,10 @@ class Cart {
                     <th scope="col">Вес/штука</th>
                     <th scope="col">№ по каталогу</th>
                     <th scope="col">Наименование</th>
-                    <th scope="col">Цена с НДС, руб/штука</th>
+                    <th scope="col">Цена, руб/штука</th>
                     <th scope="col">Количество</th>
                     <th scope="col">Вес/итого</th>
-                    <th scope="col">Цена с НДС, руб/итого</th>
+                    <th scope="col">Цена, руб/итого</th>
                 </tr>
             </thead>
             <tbody class="cart_inner_content">
