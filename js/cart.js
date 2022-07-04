@@ -68,6 +68,14 @@ class Cart {
         document.getElementById('modal_content').appendChild(newScript3)*/
     }
 
+    cart_validate() {
+        if (localStorageUtil.getProductsAllContent().length == 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     get_cart() {
         let html_cart = '';
         let cart_conter = 0;
