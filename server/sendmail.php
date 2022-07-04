@@ -28,7 +28,6 @@
     $body = '<h1>Список запасных частей</h1>';
     $body.='<p><strong>Email заказчика:</strong> '.$_POST['userEmail'].'</p>';
     $body.='<p><strong>Телефон заказчика:</strong> '.$_POST['userPhone'].'</p>';
-    $body.='<p><strong>ФИО заказчика:</strong> '.$_POST['userName'].'</p>';
     $body.='<p><strong>Адрес заказчика:</strong> '.$_POST['userAddress'].'</p>';
     $body.='<p><strong>Состав заказа:</strong></p>';
     $body.=$_POST['cart'];
