@@ -39,7 +39,7 @@ class Products {
                         <th scope="col">Вес</th>
                         <th scope="col">№ по каталогу</th>
                         <th scope="col">Наименование</th>
-                        <th scope="col">Цена с НДС, руб</th>
+                        <th scope="col">Цена, руб</th>
                         <th scope="col"> </th>
                     </tr>
                 </thead>
@@ -149,7 +149,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -172,7 +172,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -195,7 +195,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -218,7 +218,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -241,7 +241,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -264,7 +264,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -287,7 +287,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -310,7 +310,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -333,7 +333,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -356,7 +356,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -379,7 +379,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -402,7 +402,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
@@ -425,7 +425,7 @@ class Products {
                 <td scope="row" data-label="Вес">${weight}</td>
                 <td data-label="№ по каталогу">${catalog_id}</td>
                 <td data-label="Наименование">${title}</td>
-                <td data-label="Цена с НДС, руб">${price}</td>
+                <td data-label="Цена, руб">${price}</td>
                 <td data-label=" ">
                     <div class="counter">
                         <div class="text-field__group">
