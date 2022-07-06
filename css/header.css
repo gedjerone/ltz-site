@@ -115,7 +115,7 @@ header a {
     text-decoration: none;
     font-family: Arial, sans-serif;
     color: #e70e19;
-    font-size: 9pt;
+    font-size: 1.1em;
     font-weight: 800;
     white-space: nowrap;
     transition: all .2s;
@@ -145,7 +145,7 @@ header .menu_nav {
 
 /*NAVIGATION BAR*/
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1080px) {
     header {
         margin: 0;
         display: flex;
@@ -223,8 +223,8 @@ header .menu_nav {
         box-shadow: 0px 1px 1px 0px rgb(146 161 176 / 55%);
     }
     .menu_1 a {
-        margin-right: 100%;
-        padding-left: 30%;
+        margin-right: 10px;
+        padding-left: 10px;
     }
     .menu_2 {
         display: flex;
@@ -238,8 +238,8 @@ header .menu_nav {
         box-shadow: 0px 1px 1px 0px rgb(146 161 176 / 55%);
     }
     .menu_2 a {
-        margin-right: 100%;
-        padding-left: 30%;
+        margin-right: 10px;
+        padding-left: 10px;
     }
     .menu_3 {
         display: flex;
