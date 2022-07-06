@@ -63,37 +63,16 @@ function emailTest(input) {
     return regularExpression.test(input);
 }
 
-function phoneTest(input) {
-    var regularExpression = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
-    return regularExpression.test(input);
-}
-
-function nameTest(input) {
-    if (input == "") {
-        return false;
-    } else {
-        return true;
-    }
-}
-
-function addressTest(input) {
-    if (input == "") {
-        return false;
-    } else {
-        return true;
-    }
-}
-
 var cart_contains = new Cart();
 var cart_price = localStorageUtil.getAllProductsPriceSum().toLocaleString() + ' ₽';
 var cart_weight = localStorageUtil.getAllProductsWeightSum().toFixed(3) + ' кг';
 
-function sender(userEmail, userPhone, userName, userAddress) {
+function sender(userEmail) {
     $.ajax({
         type: "POST",
         url: "server/sendmail.php",
         cache: false,
-        data: { 'userEmail': userEmail, 'userPhone': userPhone, 'userName': userName, 'userAddress': userAddress, 'cart': cart_contains.get_cart(), 'cart_price': cart_price, 'cart_weight': cart_weight },
+        data: { 'userEmail': userEmail, 'cart': cart_contains.get_cart(), 'cart_price': cart_price, 'cart_weight': cart_weight },
         dataType: "html",
         success: function(data) {
             if (!data) {
@@ -116,14 +95,12 @@ function sender(userEmail, userPhone, userName, userAddress) {
 
 function send_validate() {
     var userEmail = document.querySelector('.user_email').value.trim();
-    var userPhone = document.querySelector('.user_phone').value.trim();
-    var userAddress = document.querySelector('.user_address').value.trim();
     if (cart.cart_validate() == false) {
         alert('Невозможно отправить заказ. Корзина пуста!');
-    } else if (!emailTest(userEmail) || !phoneTest(userPhone) || addressTest(userAddress) == false) {
+    } else if (!emailTest(userEmail)) {
         alert("Данные введены неверно!");
     } else {
-        sender(userEmail, userPhone, userAddress);
+        sender(userEmail);
     }
 }
 
