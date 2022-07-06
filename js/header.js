@@ -65,7 +65,8 @@ class Header {
             </div>
             <ul class="menu">
                 <li><a href="index.html" id="index">ГЛАВНАЯ</a></li>
-                <li><a href="products.html" id="products">ПРОДУКЦИЯ</a></li>
+                <li><a href="products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                <li><a href="products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
                 <li><a href="shipping.html" id="shipping">ДОСТАВКА</a></li>
                 <li><a href="contacts.html" id="contacts">КОНТАКТЫ</a></li>
                 <li>
@@ -89,10 +90,11 @@ class Header {
                 <ul class="menu_1">
                     <li id="menu_1-1"><a href="index.html" id="index">ГЛАВНАЯ</a></li>
                     <li id="menu_1-2"><a href="contacts.html" id="contacts">КОНТАКТЫ</a></li>
+                    <li id="menu_1-3"><a href="shipping.html" id="shipping">ДОСТАВКА</a></li>
                 </ul>
                 <ul class="menu_2">
-                    <li id="menu_2-1"><a href="products.html" id="products">ПРОДУКЦИЯ</a></li>
-                    <li id="menu_2-2"><a href="shipping.html" id="shipping">ДОСТАВКА</a></li>
+                    <li id="menu_2-1"><a href="products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                    <li id="menu_2-2"><a href="products.html" id="shipping">ПРАЙС-ЛИСТЫ</a></li>
                 </ul>
                 <ul class="menu_3">
                     <li class="cart_li">
