@@ -5,6 +5,15 @@
     grid-gap: 10px;
 }
 
+.h1_name h1 {
+    font-family: Arial, sans-serif;
+    color: #e70e19;
+    font-size: 18pt;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-left: 15px;
+}
+
 .content .item {
     border: 2px solid rgb(200, 200, 200);
     padding: .2em;
