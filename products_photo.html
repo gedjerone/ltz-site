@@ -25,7 +25,9 @@
     </div>
     <div class="content">
         <div class="item" id="Трансмиссия">
-            <img src="http://www.ltz.ru/new/idb/asis/31jbmzl8093.jpg">
+            <a href="products_html/item-1.html">
+                <img src="http://www.ltz.ru/new/idb/asis/31jbmzl8093.jpg">
+            </a>
             <p><b>ТРАНСМИССИЯ</b></p>
             <p>Т40А-0020010-04</p>
         </div>
@@ -573,4 +575,61 @@
             <p>Т40АМ1-2302001</p>
         </div>
     </div>
+
+    <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="img/icons8-chevron-down-100.png">
+        </button>
+        <div class="outline"></div>
+        <script type="text/javascript" language="javascript">
+            hotlog_js = "1.0";
+            hotlog_r = "" + Math.random() + "&s=411223&im=114&r=" + escape(document.referrer) + "&pg=" +
+                escape(window.location.href);
+            document.cookie = "hotlog=1; path=/";
+            hotlog_r += "&c=" + (document.cookie ? "Y" : "N");
+        </script>
+        <script type="text/javascript" language="javascript1.1">
+            hotlog_js = "1.1";
+            hotlog_r += "&j=" + (navigator.javaEnabled() ? "Y" : "N")
+        </script>
+        <script type="text/javascript" language="javascript1.2">
+            hotlog_js = "1.2";
+            hotlog_r += "&wh=" + screen.width + 'x' + screen.height + "&px=" +
+                (((navigator.appName.substring(0, 3) == "Mic")) ?
+                    screen.colorDepth : screen.pixelDepth)
+        </script>
+        <script type="text/javascript" language="javascript1.3">
+            hotlog_js = "1.3"
+        </script>
+        <script type="text/javascript" language="javascript">
+            hotlog_r += "&js=" + hotlog_js;
+            document.write("<a href='http://click.hotlog.ru/?411223' target='_top'><img class='hotlog'" +
+                " src='http://hit22.hotlog.ru/cgi-bin/hotlog/count?" +
+                hotlog_r + "&' width=88 height=31 alt=HotLog;></a>")
+        </script>
+        <noscript>
+            <a href="http://click.hotlog.ru/?411223" target="_top"><img src="http://hit22.hotlog.ru/cgi-bin/hotlog/count?s=411223&amp;im=114" border="0" 
+            width="88" height="31" alt="HotLog"></a>
+        </noscript>
+        <link rel="stylesheet" href="css/footer.css">
+    </footer>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
