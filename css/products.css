@@ -13,6 +13,17 @@ body {
     margin-bottom: 20px;
 }
 
+.ie_core{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.ie_core img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 input {
     width: 7em;
     text-align: center;
