@@ -47,8 +47,8 @@ class Header {
         <div class="navbar">
             <div class="top_header">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logonew.png" alt="">
+                    <a href="/index.html">
+                        <img src="/img/logonew.png" alt="">
                     </a>
                 </div>
                 <div class="lip_date">
@@ -64,11 +64,11 @@ class Header {
                 </div>
             </div>
             <ul class="menu">
-                <li><a href="index.html" id="index">ГЛАВНАЯ</a></li>
-                <li><a href="products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
-                <li><a href="products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
-                <li><a href="shipping.html" id="shipping">ДОСТАВКА</a></li>
-                <li><a href="contacts.html" id="contacts">КОНТАКТЫ</a></li>
+                <li><a href="/index.html" id="index">ГЛАВНАЯ</a></li>
+                <li><a href="/products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                <li><a href="/products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
+                <li><a href="/shipping.html" id="shipping">ДОСТАВКА</a></li>
+                <li><a href="/contacts.html" id="contacts">КОНТАКТЫ</a></li>
                 <li>
                     <p><a href="tel:+74742354210">(4742) 35-42-10</a></p>
                     <p><a href="tel:+74742361447">(4742) 36-14-47</a></p>
@@ -77,8 +77,8 @@ class Header {
                     <p><a href="mailto:avtoritet48@mail.ru?subject=Заказ запчастей">avtoritet48@mail.ru</a></p>
                 </li>
                 <li class="cart_li">
-                    <a href="cart.html" id="cart">
-                        <img src="img/shopping-cart-small.png" alt="">
+                    <a href="/cart.html" id="cart">
+                        <img src="/img/shopping-cart-small.png" alt="">
                         <div class="cart_stats">
                                 <p>${price.toLocaleString()} ₽</p>
                                 <p>${weight.toFixed(3)} кг</p>
@@ -88,18 +88,18 @@ class Header {
             </ul>
             <ul class="menu_nav">
                 <ul class="menu_1">
-                    <li id="menu_1-1"><a href="index.html" id="index">ГЛАВНАЯ</a></li>
-                    <li id="menu_1-2"><a href="contacts.html" id="contacts">КОНТАКТЫ</a></li>
-                    <li id="menu_1-3"><a href="shipping.html" id="shipping">ДОСТАВКА</a></li>
+                    <li id="menu_1-1"><a href="/index.html" id="index">ГЛАВНАЯ</a></li>
+                    <li id="menu_1-2"><a href="/contacts.html" id="contacts">КОНТАКТЫ</a></li>
+                    <li id="menu_1-3"><a href="/shipping.html" id="shipping">ДОСТАВКА</a></li>
                 </ul>
                 <ul class="menu_2">
-                    <li id="menu_2-1"><a href="products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
-                    <li id="menu_2-2"><a href="products.html" id="shipping">ПРАЙС-ЛИСТЫ</a></li>
+                    <li id="menu_2-1"><a href="/products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                    <li id="menu_2-2"><a href="/products.html" id="shipping">ПРАЙС-ЛИСТЫ</a></li>
                 </ul>
                 <ul class="menu_3">
                     <li class="cart_li">
-                        <a href="cart.html" id="cart">
-                            <img src="img/shopping-cart-small.png" alt="">
+                        <a href="/cart.html" id="cart">
+                            <img src="/img/shopping-cart-small.png" alt="">
                             <div class="cart_stats">
                                 <p>${price.toLocaleString()} ₽</p>
                                 <p>${weight.toFixed(3)} кг</p>
