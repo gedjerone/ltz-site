@@ -13,10 +13,38 @@ body {
     margin-bottom: 20px;
 }
 
-.ie_core{
+.ie_core {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ie_core a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ie_1 {
+    display: flex;
+    align-items: center;
+}
+
+.ie_2 {
+    display: flex;
+    align-items: center;
+}
+
+.ie_core b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #212529;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .15);
+    padding-right: 15px;
 }
 
 .ie_core img {
