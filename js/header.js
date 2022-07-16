@@ -65,7 +65,7 @@ class Header {
             </div>
             <ul class="menu">
                 <li><a href="/index.html" id="index">ГЛАВНАЯ</a></li>
-                <li><a href="/products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                <li><a href="/products_photo.html" id="products_photo">ПРОДУКЦИЯ</a></li>
                 <li><a href="/products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
                 <li><a href="/shipping.html" id="shipping">ДОСТАВКА</a></li>
                 <li><a href="/contacts.html" id="contacts">КОНТАКТЫ</a></li>
@@ -126,6 +126,9 @@ class Header {
             }
             if (html_str[i] == 'p' && html_str[i + 1] == 'r' && html_str[i + 2] == 'o' && html_str[i + 3] == 'd' && html_str[i + 4] == 'u' && html_str[i + 5] == 'c' && html_str[i + 6] == 't' && html_str[i + 7] == 's' && html_str[i + 8] == '.') {
                 document.getElementById('products').classList.add('big_active');
+            }
+            if (html_str[i] == 'p' && html_str[i + 1] == 'r' && html_str[i + 2] == 'o' && html_str[i + 3] == 'd' && html_str[i + 4] == 'u' && html_str[i + 5] == 'c' && html_str[i + 6] == 't' && html_str[i + 7] == 's' && html_str[i + 8] == '_' && html_str[i + 9] == 'p' && html_str[i + 10] == 'h') {
+                document.getElementById('products_photo').classList.add('big_active');
             }
             if (html_str[i] == 's' && html_str[i + 1] == 'h' && html_str[i + 2] == 'i' && html_str[i + 3] == 'p' && html_str[i + 4] == 'p' && html_str[i + 5] == 'i' && html_str[i + 6] == 'n' && html_str[i + 7] == 'g' && html_str[i + 8] == '.') {
                 document.getElementById('shipping').classList.add('big_active');
