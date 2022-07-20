@@ -49,14 +49,12 @@ main.addEventListener('click', function(event) {
 
 left_arrow.addEventListener('click', function(event) {
     if (event.target.closest('.left_arrow')) {
-        console.log("левая");
         changePhotoMobile();
     }
 });
 
 right_arrow.addEventListener('click', function(event) {
     if (event.target.closest('.right_arrow')) {
-        console.log("правая");
         changePhotoMobile();
     }
 });
