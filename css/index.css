@@ -112,10 +112,12 @@ body {
 }
 
 .content .promo_ltz .ltz1 .ltz1_1_img {
+    cursor: pointer;
     padding-right: 5px;
 }
 
 .content .promo_ltz .ltz1 .ltz1_2_img {
+    cursor: pointer;
     padding-left: 5px;
 }
 
