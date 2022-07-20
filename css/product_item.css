@@ -198,35 +198,9 @@ a {
     }
     .content .gallery3 {
         display: none;
-        width: auto;
-        height: 5rem;
-        box-shadow: 0px 1px 5px #ccc;
-        margin-left: auto;
-        margin-right: auto;
     }
     .content .gallery2 {
         display: none;
-        width: 16rem;
-        height: 5rem;
-        box-shadow: 0px 1px 5px #ccc;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .content .gallery3 img {
-        width: auto;
-        height: 5rem;
-        box-shadow: none;
-        object-fit: cover;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .content .gallery2 img {
-        width: 8rem;
-        height: 5rem;
-        box-shadow: none;
-        object-fit: cover;
-        margin-left: 5px;
-        margin-right: 5px;
     }
     .magnifier {
         position: relative;
