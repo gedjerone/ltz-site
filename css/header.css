@@ -21,6 +21,11 @@ header {
     justify-content: center;
 }
 
+.top_header>.logo img {
+    width: 140px;
+    height: 149px;
+}
+
 .cart {
     display: none;
 }
@@ -146,6 +151,10 @@ header .menu_nav {
 /*NAVIGATION BAR*/
 
 @media screen and (max-width: 1080px) {
+    .top_header>.logo img {
+        width: 102px;
+        height: 108px;
+    }
     header {
         margin: 0;
         display: flex;
@@ -284,5 +293,21 @@ header .menu_nav {
     }
     .cart img {
         width: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .top_header>.lip_date p {
+        font-size: 4pt;
+    }
+    .top_header .lip_date .date_time {
+        font-size: 4pt;
+    }
+    .top_header>.logo img {
+        width: 80px;
+        height: 86px;
+    }
+    header .contacts p>a {
+        font-size: 5pt;
     }
 }
