@@ -48,12 +48,14 @@ main.addEventListener('click', function(event) {
 });
 
 left_arrow.addEventListener('click', function(event) {
+    event.preventDefault()
     if (event.target.closest('.left_arrow')) {
         changePhotoMobile();
     }
 });
 
 right_arrow.addEventListener('click', function(event) {
+    event.preventDefault()
     if (event.target.closest('.right_arrow')) {
         changePhotoMobile();
     }
