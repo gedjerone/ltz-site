@@ -47,8 +47,8 @@ class Header {
         <div class="navbar">
             <div class="top_header">
                 <div class="logo">
-                    <a href="http://gedjer.tmweb.ru/index.html">
-                        <img src="/img/logonew.png" alt="">
+                    <a href="http://abobatest.tmweb.ru/index.html">
+                        <img src="/img/lBX9lG3tLp4.jpg" alt="">
                     </a>
                 </div>
                 <div class="lip_date">
@@ -64,11 +64,11 @@ class Header {
                 </div>
             </div>
             <ul class="menu">
-                <li><a href="http://gedjer.tmweb.ru/index.html" id="index">ГЛАВНАЯ</a></li>
-                <li><a href="http://gedjer.tmweb.ru/products_photo.html" id="products_photo">ПРОДУКЦИЯ</a></li>
-                <li><a href="http://gedjer.tmweb.ru/products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
-                <li><a href="http://gedjer.tmweb.ru/shipping.html" id="shipping">ДОСТАВКА</a></li>
-                <li><a href="http://gedjer.tmweb.ru/contacts.html" id="contacts">КОНТАКТЫ</a></li>
+                <li><a href="http://abobatest.tmweb.ru/index.html" id="index">ГЛАВНАЯ</a></li>
+                <li><a href="http://abobatest.tmweb.ru/products_photo.html" id="products_photo">ПРОДУКЦИЯ</a></li>
+                <li><a href="http://abobatest.tmweb.ru/products.html" id="products">ПРАЙС-ЛИСТЫ</a></li>
+                <li><a href="http://abobatest.tmweb.ru/shipping.html" id="shipping">ДОСТАВКА</a></li>
+                <li><a href="http://abobatest.tmweb.ru/contacts.html" id="contacts">КОНТАКТЫ</a></li>
                 <li>
                     <p><a href="tel:+74742354210">(4742) 35-42-10</a></p>
                     <p><a href="tel:+74742361447">(4742) 36-14-47</a></p>
@@ -77,7 +77,7 @@ class Header {
                     <p><a href="mailto:avtoritet48@mail.ru?subject=Заказ запчастей">avtoritet48@mail.ru</a></p>
                 </li>
                 <li class="cart_li">
-                    <a href="http://gedjer.tmweb.ru/cart.html" id="cart">
+                    <a href="http://abobatest.tmweb.ru/cart.html" id="cart">
                         <img src="/img/shopping-cart-small.png" alt="">
                         <div class="cart_stats">
                                 <p>${price.toLocaleString()} ₽</p>
@@ -88,17 +88,17 @@ class Header {
             </ul>
             <ul class="menu_nav">
                 <ul class="menu_1">
-                    <li id="menu_1-1"><a href="http://gedjer.tmweb.ru/index.html" id="index">ГЛАВНАЯ</a></li>
-                    <li id="menu_1-2"><a href="http://gedjer.tmweb.ru/contacts.html" id="contacts">КОНТАКТЫ</a></li>
-                    <li id="menu_1-3"><a href="http://gedjer.tmweb.ru/shipping.html" id="shipping">ДОСТАВКА</a></li>
+                    <li id="menu_1-1"><a href="http://abobatest.tmweb.ru/index.html" id="index">ГЛАВНАЯ</a></li>
+                    <li id="menu_1-2"><a href="http://abobatest.tmweb.ru/contacts.html" id="contacts">КОНТАКТЫ</a></li>
+                    <li id="menu_1-3"><a href="http://abobatest.tmweb.ru/shipping.html" id="shipping">ДОСТАВКА</a></li>
                 </ul>
                 <ul class="menu_2">
-                    <li id="menu_2-1"><a href="http://gedjer.tmweb.ru/products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
-                    <li id="menu_2-2"><a href="http://gedjer.tmweb.ru/products.html" id="shipping">ПРАЙС-ЛИСТЫ</a></li>
+                    <li id="menu_2-1"><a href="http://abobatest.tmweb.ru/products_photo.html" id="products">ПРОДУКЦИЯ</a></li>
+                    <li id="menu_2-2"><a href="http://abobatest.tmweb.ru/products.html" id="shipping">ПРАЙС-ЛИСТЫ</a></li>
                 </ul>
                 <ul class="menu_3">
                     <li class="cart_li">
-                        <a href="http://gedjer.tmweb.ru/cart.html" id="cart">
+                        <a href="http://abobatest.tmweb.ru/cart.html" id="cart">
                             <img src="/img/shopping-cart-small.png" alt="">
                             <div class="cart_stats">
                                 <p>${price.toLocaleString()} ₽</p>
