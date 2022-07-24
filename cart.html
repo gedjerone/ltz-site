@@ -94,7 +94,14 @@
             <a href="http://click.hotlog.ru/?411223" target="_top"><img src="http://hit22.hotlog.ru/cgi-bin/hotlog/count?s=411223&amp;im=114" border="0" 
             width="88" height="31" alt="HotLog"></a>
         </noscript>
-        <link rel="stylesheet" href="css/footer.css">
+        <!--link rel="stylesheet" href="css/footer.css"-->
+        <script type="text/javascript" language="javascript">
+            var versionUpdate = (new Date()).getTime();
+            var css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.href = "css/footer.css?v=" + versionUpdate;
+            document.head.appendChild(css);
+        </script>
     </footer>
 
     <script>
