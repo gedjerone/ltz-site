@@ -28,8 +28,10 @@ body {
 }
 
 .content .promo_ltz .ltz1 {
+    display: block;
     width: 205px;
     height: 193px;
+    position: relative;
 }
 
 .content .promo_ltz .ltz1>img {
@@ -105,8 +107,8 @@ body {
 }
 
 .content .promo_ltz .ltz1>img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 410px;
+    max-height: 260px;
     display: block;
     overflow-x: hidden;
 }
