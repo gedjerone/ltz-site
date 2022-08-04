@@ -70,7 +70,19 @@
         script.src = "js/send_email.js?v=" + versionUpdate;
         document.body.appendChild(script);
     </script>
+    <script>
+        const modal_btn = document.querySelector('.js-open-modal');
+        const modal_content = document.querySelector('#modal_content');
+        const close_cross = document.querySelector('.js-modal-close');
 
+        modal_btn.addEventListener('click', () => {
+            modal_content.style.visibility = "visible";
+        });
+
+        close_cross.addEventListener('click', () => {
+            modal_content.style.visibility = "hidden";
+        });
+    </script>
     <footer>
         <button onclick="topFunction()" id="myBtn" title="Go to top">
             <img src="img/icons8-chevron-down-100.png">
