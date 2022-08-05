@@ -153,6 +153,7 @@ table td:not(:last-child) {
 
 .modal {
     /* Скрываем окна  */
+    opacity: 0;
     visibility: hidden;
     /*  Установаем ширину окна  */
     width: 100%;

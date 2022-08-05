@@ -1,55 +1,143 @@
-.h1_name h1 {
-    font-family: Arial, sans-serif;
-    color: #e70e19;
-    font-size: 18pt;
-    font-weight: 800;
-    white-space: nowrap;
-    margin-left: 15px;
-    margin-bottom: 0px;
-}
-
-h3 {
-    font-family: Arial, sans-serif;
-    color: #d10c15;
-    font-size: 14pt;
-    font-weight: 800;
-    white-space: nowrap;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-
-.main-img {
-    margin-left: 15px;
-    width: 500px;
-    height: 200px;
-    position: relative;
-    background-image: url("/img/promo2.jpg");
-    background-size: cover;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-input {
-    width: 500px;
-    height: 200px;
-}
-
-.main-img::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    background-image: url("/img/load_img.png");
-    background-size: cover;
-    opacity: 0;
-    border-radius: 10px;
-}
-
-.main-img:hover:after {
-    opacity: 1;
-    background-color: rgba(0, 0, 0, .5);
-}
+    .h1_name h1 {
+        font-family: Arial, sans-serif;
+        color: #e70e19;
+        font-size: 18pt;
+        font-weight: 800;
+        white-space: nowrap;
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+    
+    h3 {
+        font-family: Arial, sans-serif;
+        color: #d10c15;
+        font-size: 14pt;
+        font-weight: 800;
+        white-space: nowrap;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .main-img {
+        margin-left: 15px;
+        width: 500px;
+        height: 200px;
+        position: relative;
+        background-image: url("/img/promo2.jpg");
+        background-size: cover;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    file-input {
+        width: 500px;
+        height: 200px;
+    }
+    
+    .main-img::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        background-image: url("/img/load_img.png");
+        background-size: cover;
+        opacity: 0;
+        border-radius: 10px;
+    }
+    
+    .main-img:hover:after {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    .label-auth h1 {
+        font-family: Arial, sans-serif;
+        color: #d10c15;
+        font-size: 18pt;
+        font-weight: 800;
+        white-space: nowrap;
+    }
+    
+    .authorize {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        -webkit-touch-callout: none;
+        /* iOS Safari */
+        -webkit-user-select: none;
+        /* Chrome/Safari/Opera */
+        -khtml-user-select: none;
+        /* Konqueror */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* Internet Explorer/Edge */
+        user-select: none;
+        /* Non-prefixed version, currently not supported by any browser */
+    }
+    
+    .input-login {
+        min-height: 1rem;
+        max-height: 2rem;
+        min-width: 230px;
+        max-width: 300px;
+        margin-top: 15px;
+        font-family: Arial, sans-serif;
+        color: rgb(24, 24, 24);
+        border-radius: 10px;
+        padding: 2px 10px;
+        border: 1px solid rgb(143, 143, 143);
+        font-size: 12pt;
+    }
+    
+    .input-login::placeholder {
+        color: rgb(78, 78, 78);
+    }
+    
+    .input-password {
+        min-height: 1rem;
+        max-height: 2rem;
+        min-width: 230px;
+        max-width: 300px;
+        margin-top: 15px;
+        font-family: Arial, sans-serif;
+        color: rgb(24, 24, 24);
+        border-radius: 10px;
+        padding: 2px 10px;
+        border: 1px solid rgb(143, 143, 143);
+        font-size: 12pt;
+    }
+    
+    .input-login::placeholder {
+        color: rgb(78, 78, 78);
+    }
+    
+    .login-btn {
+        min-height: 1rem;
+        max-height: 2rem;
+        min-width: 200px;
+        max-width: 300px;
+        margin-top: 25px;
+        background-color: #e70e19;
+        padding: 4px 25px;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        font-size: 12pt;
+        font-weight: 600;
+        white-space: nowrap;
+        border-radius: 10px;
+        box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.45);
+        text-shadow: 3px 3px 5px rgb(0 0 0 / 45%);
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    .login-btn:hover {
+        background-color: #b80a13;
+    }

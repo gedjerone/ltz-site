@@ -79,6 +79,9 @@ function sender(userEmail) {
                 alert("Ошибка!");
             } else {
                 alert("Заказ отправлен на почту!");
+                const modal_content = document.querySelector('#modal_content');
+                modal_content.style.visibility = "hidden";
+                modal_content.style.opacity = "0";
             }
         },
         beforeSend: function() {
