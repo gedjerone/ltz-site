@@ -1,180 +1,4 @@
 const CATALOG = [{
-        "id": 1,
-        "category": "Каталоги",
-        "weight": 1,
-        "catalog_id": "—",
-        "title": "каталог деталей Т-40М, Т-40АМ",
-        "price": 752
-    },
-    {
-        "id": 2,
-        "category": "Каталоги",
-        "weight": 1,
-        "catalog_id": "—",
-        "title": "каталог деталей ЛТЗ 60АВ",
-        "price": 470
-    },
-    {
-        "id": 3,
-        "category": "Каталоги",
-        "weight": 0.8,
-        "catalog_id": "—",
-        "title": "руководство по эксплуатации \"Трактора Т-40\"",
-        "price": 114
-    },
-    {
-        "id": 4,
-        "category": "Каталоги",
-        "weight": 0.8,
-        "catalog_id": "—",
-        "title": "руководство по эксплуатации \"Трактора Т-40\"",
-        "price": 138
-    },
-    {
-        "id": 5,
-        "category": "Стекла",
-        "weight": 9.01,
-        "catalog_id": "Т40М1-6700012",
-        "title": "стекло переднее ЛТЗ 55,60 1110х769",
-        "price": 1910
-    },
-    {
-        "id": 6,
-        "category": "Стекла",
-        "weight": 4.34,
-        "catalog_id": "Т40М1-6700013",
-        "title": "стекло боковое ЛТЗ 55,60 642х692",
-        "price": 1022
-    },
-    {
-        "id": 7,
-        "category": "Стекла",
-        "weight": 4.34,
-        "catalog_id": "Т40М1-6700013",
-        "title": "стекло боковое ЛТЗ 55,60 642х692",
-        "price": 1022
-    },
-    {
-        "id": 8,
-        "category": "Стекла",
-        "weight": 3.85,
-        "catalog_id": "Т25-6703021-Б",
-        "title": "стекло переднего окна Т-40 668х516",
-        "price":
-    },
-    {
-        "id": 9,
-        "category": "Стекла",
-        "weight": 4.7,
-        "catalog_id": "Т40М1-6706011",
-        "title": "стекло боковое (4 отв.) ЛТЗ (702х654)",
-        "price": 602
-    },
-    {
-        "id": 10,
-        "category": "Стекла",
-        "weight": 3.9,
-        "catalog_id": "Т40М1-6706016-В",
-        "title": "стекло заднее ЛТЗ с отверстиями 1098х702",
-        "price": 2102
-    },
-    {
-        "id": 11,
-        "category": "Стекла",
-        "weight": 4.7,
-        "catalog_id": "Т40М8-6706031",
-        "title": "стекло боковое (3 отв.) ЛТЗ",
-        "price": 578
-    },
-    {
-        "id": 12,
-        "category": "Стекла",
-        "weight": 3.9,
-        "catalog_id": "Т25-6706211",
-        "title": "стекло заднее ЛТЗ 979х600",
-        "price": 1058
-    },
-    {
-        "id": 13,
-        "category": "Стекла",
-        "weight": 4.2,
-        "catalog_id": "Т40М1-6708011",
-        "title": "стекло двери верх. ЛТЗ 649х537",
-        "price": 950
-    },
-    {
-        "id": 14,
-        "category": "Стекла",
-        "weight": 1.8,
-        "catalog_id": "Т40М2-6708011",
-        "title": "стекло двери верхнее ЛТЗ (после 2002 г.) (771х662)",
-        "price": 890
-    },
-    {
-        "id": 15,
-        "category": "Стекла",
-        "weight": 2.12,
-        "catalog_id": "Т40М2-6708012",
-        "title": "стекло двери нижнее ЛТЗ (после 2002 г.) (542х520)",
-        "price": 638
-    },
-    {
-        "id": 16,
-        "category": "Стекла",
-        "weight": 1.21,
-        "catalog_id": "Т40М1-6708012-А",
-        "title": "стекло двери нижнее ЛТЗ 491х302",
-        "price": 338
-    },
-    {
-        "id": 17,
-        "category": "Стекла",
-        "weight": 1.8,
-        "catalog_id": "Т25-6708015",
-        "title": "стекло двери верхнее Т40 425х355х385",
-        "price": 360
-    },
-    {
-        "id": 18,
-        "category": "Стекла",
-        "weight": 1.27,
-        "catalog_id": "Т25-6708018",
-        "title": "стекло двери нижнее Т40 (400х330)",
-        "price": 458
-    },
-    {
-        "id": 19,
-        "category": "Стекла",
-        "weight": 1.7,
-        "catalog_id": "Т25-6709011",
-        "title": "стекло боковое Т40 385х385",
-        "price": 518
-    },
-    {
-        "id": 20,
-        "category": "Стекла",
-        "weight": 2.82,
-        "catalog_id": "Т25-6710012-Б",
-        "title": "стекло заднего окна Т-40 (608х395)",
-        "price": 830
-    },
-    {
-        "id": 21,
-        "category": "Стекла",
-        "weight": 2.7,
-        "catalog_id": "Т25-6710012-Б",
-        "title": "стекло заднего окна Т-40 (575х395)",
-        "price": 133
-    },
-    {
-        "id": 22,
-        "category": "Кабина",
-        "weight": 7.35,
-        "catalog_id": "Т25-6708010",
-        "title": "дверь правая в сборе Т-40",
-        "price": 2270
-    },
-    {
         "id": 23,
         "category": "Кабина",
         "weight": 6.26,
@@ -6575,3 +6399,19 @@ const CATALOG = [{
         "price": 2600
     },
 ];
+
+function lets_go() {
+    CATALOG.forEach(({ category, weight, catalog_id, title, price }) => {
+
+        $.ajax({
+            url: 'products.php',
+            type: 'POST',
+            data: { 'category': category, 'prod_weight': weight, 'prod_catnum': catalog_id, 'name': title, 'price': price },
+            success: () => {
+                console.log(category, weight, catalog_id, title, price + "\n");
+            }
+        });
+
+    });
+    alert("Ждёмс!");
+}

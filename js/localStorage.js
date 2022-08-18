@@ -175,7 +175,7 @@ class LocalStorageUtil {
         }
     }
 
-    putProducts(id_product, count) {
+    putProducts(id_product, count, weight, catalog_id, title, price) {
         let productsId = this.getProductsId();
         let productsCount = this.getProductsCount();
         let productsPrice = this.getProductsPrice();
@@ -197,18 +197,46 @@ class LocalStorageUtil {
                 counter += 1;
             });
         } else {
-            CATALOG.forEach(({ id, weight, catalog_id, title, price }) => {
-                if (id_product == id) {
-                    productsId.push(id);
-                    productsCount.push(count);
-                    productsPrice.push(price);
-                    productsWeight.push(weight);
-                    productsPriceSum.push(count * price);
-                    productsWeightSum.push(count * weight);
-                    productsCatalogId.push(catalog_id);
-                    productsTitle.push(title);
-                }
-            });
+
+            productsId.push(id_product);
+            productsCount.push(count);
+            productsPrice.push(parseFloat(price, 10));
+            productsWeight.push(parseFloat(weight, 10));
+            productsPriceSum.push(count * parseFloat(price, 10));
+            productsWeightSum.push(count * parseFloat(weight, 10));
+            productsCatalogId.push(catalog_id);
+            productsTitle.push(title);
+
+            // $.ajax({
+            //     url: 'cart.php',
+            //     type: 'POST',
+            //     data: { 'id': id_product },
+            //     dataType: 'json',
+            //     async: false,
+            //     success: function(response) {
+            //         productsId.push(response.id);
+            //         productsCount.push(count);
+            //         productsPrice.push(response.price);
+            //         productsWeight.push(response.weight);
+            //         productsPriceSum.push(count * response.price);
+            //         productsWeightSum.push(count * response.weight);
+            //         productsCatalogId.push(response.catalog_id);
+            //         productsTitle.push(response.title);
+            //     }
+            // });
+
+            // CATALOG.forEach(({ id, weight, catalog_id, title, price }) => {
+            //     if (id_product == id) {
+            //         productsId.push(id);
+            //         productsCount.push(count);
+            //         productsPrice.push(price);
+            //         productsWeight.push(weight);
+            //         productsPriceSum.push(count * price);
+            //         productsWeightSum.push(count * weight);
+            //         productsCatalogId.push(catalog_id);
+            //         productsTitle.push(title);
+            //     }
+            // });
         }
 
         localStorage.setItem(this.keyId, JSON.stringify(productsId));

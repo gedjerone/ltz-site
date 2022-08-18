@@ -40,7 +40,15 @@
             <a href="products.html" class="btn">Заказать</a>
         </div>
         <div class="news">
-            <img class="news_img" src="img/promo2.jpg" alt=" ">
+            <script type="text/javascript" language="javascript">
+                var versionUpdate = (new Date()).getTime();
+                var img = document.createElement("img");
+                img.src = "img/promo2.jpg?v=" + versionUpdate;
+                img.alt = "ltz news"
+                img.class = "news_img";
+                document.querySelector(".news").appendChild(img);
+            </script>
+            <!img class="news_img" src="img/promo2.jpg" alt=" ">
         </div>
         <div class="promo_ltz ">
             <div class="ltz1 ">

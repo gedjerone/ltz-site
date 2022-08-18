@@ -49,23 +49,6 @@ class Cart {
         var newScript1 = document.createElement("script");
         newScript1.src = "js/remove_from_cart.js";
         document.getElementById('cart_content').appendChild(newScript1)
-
-        /*var a = document.createElement('a');
-        var link = document.createTextNode("Отправить заказ на email");
-        a.appendChild(link);
-        a.title = "Отправить заказ на email";
-        a.href = "#";
-        a.classList = 'js-open-modal btn';
-        a.setAttribute('data-modal', '1');
-        document.getElementById('cart_content').appendChild(a);
-        //newHTML = `<a href="#" class="js-open-modal btn" data-modal="1">Отправить заказ на email</a>`;
-       
-        var newScript2 = document.createElement("script");
-        newScript2.src = "http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
-        document.getElementById('modal_content').appendChild(newScript2)
-        var newScript3 = document.createElement("script");
-        newScript3.src = "js/send_email.js";
-        document.getElementById('modal_content').appendChild(newScript3)*/
     }
 
     cart_validate() {

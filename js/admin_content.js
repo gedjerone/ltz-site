@@ -1,29 +1,3 @@
-class Admin {
-    render() {
-        const html = `<div class="h1_name">
-                <h1>Админ панель</h1>
-            </div>
-            <h3>Главная</h3>
-            <div class="main-img">
-                <input id="file-input" type="file" name="file" style="display:none;">
-            </div>
-            <h3>Продукция</h3>
-            <div class="products-w-photo">
-                <!--что-то там-->
-            </div>
-            <h3>Прайс-листы</h3>
-            <div class="products">
-                <!--что-то там-->
-            </div>`
-        document.querySelector('.content').innerHTML = html;
-        let script = document.createElement("script");
-        script.src = 'js/admin.js';
-        document.querySelector('.content').appendChild(script);
-    }
-}
-
-var admin_content = new Admin();
-
 const login = document.querySelector('.login-btn');
 const login_input = document.querySelector('.input-login');
 const password_input = document.querySelector('.input-password');
@@ -70,11 +44,13 @@ login.addEventListener('click', () => {
                     alert('Данные неверны, попробуйте заново')
                     password_input.value = '';
                 } else if (response.token_xfs == '1') {
+                    let versionUpdate = (new Date()).getTime();
                     document.querySelector('.content').innerHTML = response.html;
                     let script = document.createElement("script");
-                    script.src = response.admin_src;
+                    script.src = response.admin_src + '?v=' + versionUpdate;
                     document.querySelector('.content').appendChild(script);
-                    //admin_content.render();
+                    let bg_img = "url('/img/promo2.jpg?v=" + versionUpdate + "')";
+                    document.querySelector('.main-img').style.backgroundImage = bg_img;
                 }
             },
             beforeSend: function() {},

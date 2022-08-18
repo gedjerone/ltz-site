@@ -142,7 +142,7 @@ class Products {
         document.getElementById('catalog').innerHTML = html;
     }
 
-    render_Catalogs() {
+    /*render_Catalogs() {
         Catalogs.forEach(({ id, category, weight, catalog_id, title, price }) => {
             this.htmlCatalog_Catalogs += `
             <tr class="Каталоги" id="Каталоги">
@@ -163,282 +163,201 @@ class Products {
             </tr>              
             `;
         });
+    }*/
+
+    render_Catalogs() {
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Каталоги' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
+        });
+        this.htmlCatalog_Catalogs = response_html;
     }
 
     render_Glass() {
-        Glass.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Glass += `
-            <tr class="Стекла" id="Стекла">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Стекла' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Glass = response_html;
     }
 
     render_Cab() {
-        Cab.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Cab += `
-            <tr class="Кабина" id="Кабина">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Кабина' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Cab = response_html;
     }
 
     render_Agreg() {
-        Agreg.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Agreg += `
-            <tr class="Узлы_и_агрегаты" id="Узлы_и_агрегаты">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Узлы_и_агрегаты' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Agreg = response_html;
     }
 
     render_PD() {
-        PD.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_PD += `
-            <tr class="ПД" id="ПД">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'ПД' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_PD = response_html;
     }
 
     render_Other() {
-        Other.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Other += `
-            <tr class="Прочее" id="Прочее">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Прочее' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Other = response_html;
     }
 
     render_Sal() {
-        Sal.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Sal += `
-            <tr class="Сальники_прокладки" id="Сальники_прокладки">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Сальники_прокладки' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Sal = response_html;
     }
 
     render_Kits() {
-        Kits.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Kits += `
-            <tr class="Ремкомплекты" id="Ремкомплекты">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Ремкомплекты' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Kits = response_html;
     }
 
     render_T40LTZ_Parts() {
-        T40LTZ_Parts.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_T40LTZ_Parts += `
-            <tr class="Т-40_ЛТЗ_Запасные_части" id="Т-40_ЛТЗ_Запасные_части">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Т-40_ЛТЗ_Запасные_части' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_T40LTZ_Parts = response_html;
     }
 
     render_D144_Engine() {
-        D144_Engine.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_D144_Engine += `
-            <tr class="Д-144_двигатель_в_сборе" id="Д-144_двигатель_в_сборе">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Д-144_двигатель_в_сборе' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_D144_Engine = response_html;
     }
 
     render_Electr() {
-        Electr.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_Electr += `
-            <tr class="Электрооборудование" id="Электрооборудование">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Электрооборудование' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_Electr = response_html;
     }
 
     render_D144_Prok() {
-        D144_Prok.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_D144_Prok += `
-            <tr class="Комплекты_прокладок_Д-144" id="Комплекты_прокладок_Д-144">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Комплекты_прокладок_Д-144' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_D144_Prok = response_html;
     }
 
     render_D144_Parts() {
-        D144_Parts.forEach(({ id, category, weight, catalog_id, title, price }) => {
-            this.htmlCatalog_D144_Parts += `
-            <tr class="Д-144_Запасные_части" id="Д-144_Запасные_части">
-                <td scope="row" data-label="Вес">${weight}</td>
-                <td data-label="№ по каталогу">${catalog_id}</td>
-                <td data-label="Наименование">${title}</td>
-                <td data-label="Цена, руб">${price}</td>
-                <td data-label=" ">
-                    <div class="counter">
-                        <div class="text-field__group">
-                            <div class="hidden_id">${id}</div>
-                            <input class="text-field__input" type="add" id="add" name="add" placeholder="Количество">
-                            <button class="text-field__btn" type="button">Добавить в корзину</button>
-                            <button class="text-field__btn_2_hide" type="button">Удалить из корзины</button>
-                        </div>
-                    </div>
-                </td>  
-            </tr>              
-            `;
+        var response_html = ``;
+        $.ajax({
+            url: 'products_render.php',
+            type: 'POST',
+            data: { 'category': 'Д-144_Запасные_части' },
+            dataType: 'html',
+            async: false,
+            success: function(response) {
+                response_html = response;
+            }
         });
+        this.htmlCatalog_D144_Parts = response_html;
     }
 }
 
@@ -449,7 +368,7 @@ const tr_collection = document.querySelectorAll('.category');
 
 const checkbox_collection = document.querySelectorAll('.hider');
 
-function validator(element, localStorageUtil) {
+function validator(element, localStorageUtil, data) {
     if (element.querySelector('.text-field__input').value == "") {
         element.querySelector('.text-field__input').className = 'text-field__input invalid_field';
         element.querySelector('.text-field__btn').className = 'text-field__btn invalid_btn';
@@ -464,7 +383,7 @@ function validator(element, localStorageUtil) {
             element.querySelector('.text-field__input').className = 'text-field__input valid_field';
             element.querySelector('.text-field__btn').className = 'text-field__btn_hide';
             element.querySelector('.text-field__btn_2_hide').className = 'text-field__btn_2';
-            localStorageUtil.putProducts(element.querySelector('.hidden_id').innerText, element.querySelector('.text-field__input').value);
+            localStorageUtil.putProducts(element.querySelector('.hidden_id').innerText, element.querySelector('.text-field__input').value, data.children['0'].innerText, data.children['1'].innerText, data.children['2'].innerText, data.children['3'].innerText);
         }
     } else if (isNaN(element.querySelector('.text-field__input').value) == true) {
         element.querySelector('.text-field__input').className = 'text-field__input invalid_field';
@@ -491,7 +410,7 @@ checkbox_collection.forEach(element => {
                     field_gr_0.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -522,7 +441,7 @@ checkbox_collection.forEach(element => {
                     field_gr_1.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -553,7 +472,7 @@ checkbox_collection.forEach(element => {
                     field_gr_2.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -584,7 +503,7 @@ checkbox_collection.forEach(element => {
                     field_gr_3.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -615,7 +534,7 @@ checkbox_collection.forEach(element => {
                     field_gr_4.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -646,7 +565,7 @@ checkbox_collection.forEach(element => {
                     field_gr_5.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -677,7 +596,7 @@ checkbox_collection.forEach(element => {
                     field_gr_6.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -708,7 +627,7 @@ checkbox_collection.forEach(element => {
                     field_gr_7.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -739,7 +658,7 @@ checkbox_collection.forEach(element => {
                     field_gr_8.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -770,7 +689,7 @@ checkbox_collection.forEach(element => {
                     field_gr_9.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -801,7 +720,7 @@ checkbox_collection.forEach(element => {
                     field_gr_10.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -832,7 +751,7 @@ checkbox_collection.forEach(element => {
                     field_gr_11.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);
@@ -863,7 +782,7 @@ checkbox_collection.forEach(element => {
                     field_gr_12.forEach(element => {
                         element.addEventListener("click", function(event) {
                             if (event.target.closest('.text-field__btn')) {
-                                validator(element, localStorageUtil);
+                                validator(element, localStorageUtil, element.parentNode.parentNode.parentNode);
                             }
                             if (event.target.closest('.text-field__btn_2')) {
                                 remove(element, localStorageUtil);

@@ -1,0 +1,12 @@
+[
+    { "type": "header", "version": "5.2.0", "comment": "Export to JSON plugin for PHPMyAdmin" },
+    { "type": "database", "name": "co19125_gedjer" },
+    {
+        "type": "table",
+        "name": "catalog",
+        "database": "co19125_gedjer",
+        "data": [
+            { "ID": "6", "CATEGORY": "Стекла", "WEIGHT": "4.34", "CATALOG_ID": "Т40М1-6700013", "TITLE": "стекло боковое ЛТЗ 55,60 642х692", "PRICE": "1022" }
+        ]
+    }
+]
