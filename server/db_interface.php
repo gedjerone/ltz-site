@@ -48,4 +48,24 @@
         mysqli_query($link, $sql);
     }
 
+    function get_items($link) {
+        $sql = "SELECT * FROM `items`;";
+
+        $result = mysqli_query($link, $sql);
+
+        $catalog = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return $catalog;
+    }   
+
+    function get_items_by_id($link, $id) {
+        $sql = "SELECT * FROM `items` WHERE ID = \"" . $id . "\";";
+
+        $result = mysqli_query($link, $sql);
+
+        $catalog = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+        return $catalog;
+    }   
+
 ?>

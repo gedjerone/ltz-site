@@ -2,69 +2,48 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <!-base href="http://www.ltz.ru ">
+    <!base href="http://127.0.0.1:5500/">
     <title>Запасные части ЛТЗ, Т-40. Фирма Авторитет (г.Липецк)</title>
     <meta content="ЛТЗ, Т-40, Т40, ЛТЗ55, ЛТЗ60, запасные части Т40, запасные части Т-40, запасные части ЛТЗ, трактора ЛТЗ, запчасти Т-40, запчасти Т40, запчасти ЛТЗ, сцепление, ГУР, шестерня, дилер, мост, купить " name="KEYWORDS ">
     <meta content="Запасные части к тракторам Т-40, ЛТЗ 55, ЛТЗ 60,трактора ЛТЗ " name="DESCRIPTION ">
-    <script type="text/javascript" src="js/localStorage.js"></script>
+    <script type="text/javascript " src="http://www.ltz.ru/new/a.js "></script>
+    <script type="text/javascript" src="/js/localStorage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/product_item.css">
 </head>
 
 <body>
     <header>
-        <script src="js/header.js"></script>
+        <script src="/js/header.js"></script>
     </header>
 
+    <script type="text/javascript" language="javascript">
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "/js/item_render.js?v=" + versionUpdate;
+        document.body.appendChild(script);
+    </script>
+
     <div class="content">
-        <div class="h1_name">
-            <h1>Контакты</h1>
-        </div>
-        <div class="opt">
-            <div class="h2_contacts">
-                <h2>Оптовая торговля</h2>
-            </div>
-            <div class="inner">
-                <div class="b">
-                    <b>ОФИС:</b>
-                </div>
-                <div class="inner_content" id="opt">
-                    <p>ООО "Фирма "Авторитет" 398002, г.Липецк, ул.Балмочных, 15, офис 24</p>
-                    <p>(4742) 35-42-10</p>
-                    <p> (4742) 36-14-47</p>
-                    <p><a href="mailto:avtoritet48@mail.ru">avtoritet48@mail.ru</a></p>
-                </div>
-            </div>
-            <div class="inner">
-                <div class="b">
-                    <b>СКЛАД:</b>
-                </div>
-                <div class="inner_content" id="opt_last">
-                    <p>г.Липецк, Трубный проезд, владение 6</p>
-                    <p><a href="http://www.ltz.ru/map.html">схема проезда</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="roz">
-            <div class="h2_contacts">
-                <h2>Розничная торговля</h2>
-            </div>
-            <div class="inner_content" id="roz">
-                <b>"Торговый Дом ОАО "Липецкий трактор"</b>
-                <p>г.Липецк, ул.Краснозаводская, 1 рядом с заводоуправлением ОАО "Липецкий Трактор"</p>
-                <p>(4742) 73-46-29</p>
-                <p><a href="mailto:avtoritet48@mail.ru">avtoritet48@mail.ru</a></p>
-            </div>
-        </div>
+
     </div>
+    <script type="text/javascript" language="javascript">
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "/js/gallery.js?v=" + versionUpdate;
+        document.body.appendChild(script);
+    </script>
+
     <footer>
         <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="img/icons8-chevron-down-100.png">
+            <img src="/img/icons8-chevron-down-100.png">
         </button>
         <div class="outline"></div>
-
         <script type="text/javascript" language="javascript">
             hotlog_js = "1.0";
             hotlog_r = "" + Math.random() + "&s=411223&im=114&r=" + escape(document.referrer) + "&pg=" +
@@ -95,9 +74,8 @@
             <a href="http://click.hotlog.ru/?411223" target="_top"><img src="http://hit22.hotlog.ru/cgi-bin/hotlog/count?s=411223&amp;im=114" border="0" 
             width="88" height="31" alt="HotLog"></a>
         </noscript>
-        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="/css/footer.css">
     </footer>
-
     <script>
         window.onscroll = function() {
             scrollFunction()
