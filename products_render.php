@@ -23,7 +23,7 @@
             </div>
         </td>  
         </tr>';
-        echo $html;
+        //echo $html;
         array_push($response, $html);
     }
 

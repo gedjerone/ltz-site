@@ -5,7 +5,7 @@
 //header('Location: http://'.$_SERVER['HTTP_HOST'].$redirect_url);
 $uploaddir = "img/promo2.jpg";
 if (move_uploaded_file($_FILES['file_main_jpg']['tmp_name'], $uploaddir)) {
-    $redirect_url = "/index.html";
+    $redirect_url = "/index";
     header('Location: '.$redirect_url, true, 302);
     //echo "Файл корректен и был успешно загружен.\n";
     //$redirect_url = "/admin.html";

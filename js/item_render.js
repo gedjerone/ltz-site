@@ -26,6 +26,11 @@ class re_i {
             }
         });
         document.querySelector('.content').innerHTML = response_html;
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "/js/gallery.js?v=" + versionUpdate;
+        document.querySelector('.content').appendChild(script);
     }
 }
 

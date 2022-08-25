@@ -13,15 +13,15 @@
     }
     $info_1 = '';
     if ($item[0]['INFO_1'] != NULL) {
-        $catalog_id = '<p>' . $item[0]['INFO_1'] . '</p>';
+        $info_1 = '<p>' . $item[0]['INFO_1'] . '</p>';
     }
     $info_2 = '';
     if ($item[0]['INFO_2'] != NULL) {
-        $catalog_id = '<p>' . $item[0]['INFO_2'] . '</p>';
+        $info_2 = '<p>' . $item[0]['INFO_2'] . '</p>';
     }
     $info_3 = '';
     if ($item[0]['INFO_3'] != NULL) {
-        $catalog_id = '<p>' . $item[0]['INFO_3'] . '</p>';
+        $info_3 = '<p>' . $item[0]['INFO_3'] . '</p>';
     }
     $description = '';
     if ($item[0]['DESCRIPTION'] != NULL) {

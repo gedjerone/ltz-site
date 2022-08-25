@@ -16,6 +16,11 @@ class P_Items {
             }
         });
         document.querySelector('.content').innerHTML = response_html;
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "js/products_photo.js?v=" + versionUpdate;
+        document.body.appendChild(script);
         // this.prod_photo_items = response_html;
         //document.querySelector('.content').appendChild(this.prod_photo_items);
     }
