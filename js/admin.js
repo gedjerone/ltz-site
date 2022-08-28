@@ -650,3 +650,54 @@ var item_delete_btn = document.querySelector('.items_delete');
 item_delete_btn.addEventListener('click', () => {
     delete_item();
 });
+
+function edit_files(file_container, name) {
+    var myFormData = new FormData();
+    if (file_container.files.length != 0) {
+        myFormData.append('doc_file', file_container.files[0]);
+        myFormData.append('name_file', name)
+    } else {
+        alert("Загрузите файл");
+    }
+    myFormData.append('doc_file[]', file_container.files[0]);
+    $.ajax({
+        url: 'upload_docs.php',
+        type: 'POST',
+        processData: false,
+        contentType: false,
+        dataType: 'json',
+        data: myFormData,
+        success: () => {
+            alert('Файл успешно изменён!');
+        }
+    });
+}
+
+var pdf_rus_btn = document.querySelector('.pdf_rus_btn');
+var pdf_eng_btn = document.querySelector('.pdf_eng_btn');
+var excel_rus_btn = document.querySelector('.excel_rus_btn');
+var excel_eng_btn = document.querySelector('.excel_eng_btn');
+
+pdf_rus_btn.addEventListener('click', () => {
+    var pdf_rus = document.querySelector('.pdf-rus');
+    var name = "pdf-rus.pdf";
+    edit_files(pdf_rus, name);
+});
+
+pdf_eng_btn.addEventListener('click', () => {
+    var pdf_eng = document.querySelector('.pdf-eng');
+    var name = "pdf-eng.pdf";
+    edit_files(pdf_eng, name);
+});
+
+excel_rus_btn.addEventListener('click', () => {
+    var excel_rus = document.querySelector('.excel-rus');
+    var name = "excel-rus.pdf";
+    edit_files(excel_rus, name);
+});
+
+excel_eng_btn.addEventListener('click', () => {
+    var excel_eng = document.querySelector('.excel-eng');
+    var name = "excel-eng.pdf";
+    edit_files(excel_eng, name);
+});

@@ -18,6 +18,26 @@
         </div>
         <input  id="sumbit-input" type="submit" value="Изменить картинку"/>
     </form>
+    <h3>Прайс-листы (PDF/EXCEL)</h3>
+    <div class="products" id="add">
+        <div class="files_block">
+            <input class="file_selector pdf-rus" id="file-input-low" name="file_doc" type="file" accept=".pdf"/>
+            <button style="width: 200px;" class="pdf_rus_btn">Изменить PDF (русский)</button>
+        </div>
+        <div class="files_block">
+            <input class="file_selector pdf-eng" id="file-input-low" name="file_doc" type="file" accept=".pdf"/>
+            <button style="width: 200px;" class="pdf_eng_btn">Изменить PDF (английский)</button>
+        </div>
+        <div class="files_block">
+            <input class="file_selector excel-rus" id="file-input-low" name="file_doc" type="file" accept=".xls, .xlsx, .csv"/>
+            <button style="width: 200px;" class="excel_rus_btn">Изменить EXCEL (русский)</button>
+        </div>
+        <div class="files_block">
+            <input class="file_selector excel-eng" id="file-input-low" name="file_doc" type="file" accept=".xls, .xlsx, .csv"/>
+            <button style="width: 200px;" class="excel_eng_btn">Изменить EXCEL (английский)</button>
+        </div>
+        <!--input class="files_sumbit" id="sumbit-input" type="submit" value="Изменить файлы"/-->
+    </div>
     <h3>Прайс-листы (Добавить товар)</h3>
     <div class="products" id="add">
         <select class="products_select" name="category">

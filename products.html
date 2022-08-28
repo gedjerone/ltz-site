@@ -24,44 +24,63 @@
     </div>
     <div class="ie_core">
         <span class="ie_1">
-            <a href=/files/1655652223911803.pdf">
+            <a id="pdf-rus" href="/files/pdf-rus.pdf">
                 <img src="img/pdf.png">
                 <b>Запчасти Т-40, ЛТЗ</b>
             </a>
         </span>
-        <span class="ie_2">
-            <a href="/files/avtoritet-en.pdf">
+        <span id="pdf-eng" class="ie_2">
+            <a href="/files/pdf-eng.pdf">
                 <img src="/img/pdf.png">
                 <b>Parts Т-40, ЛТЗ</b>
             </a>
         </span>
-        <span class="ie_1" id="pc">
-            <a href="files/parts-avtoritet.xls">
+        <span id="excel-rus" class="ie_1" id="pc">
+            <a href="files/excel-rus.xls">
                 <img src="/img/xls.png">
                 <b>Запчасти Т-40, ЛТЗ</b>
             </a>
         </span>
-        <span class="ie_2" id="pc">
-            <a href="/files/avtoritet-en.xls">
+        <span id="excel-eng" class="ie_2" id="pc">
+            <a href="/files/excel-eng.xls">
                 <img src="/img/xls.png">
                 <b>Parts Т-40, ЛТЗ</b>
             </a>
         </span>
     </div>
     <div class="ie_core" id="mobile">
-        <span class="ie_1">
-            <a href="/files/parts-avtoritet.xls">
+        <span id="excel-rus" class="ie_1">
+            <a href="/files/excel-rus.xls">
                 <img src="/img/xls.png">
                 <b>Запчасти Т-40, ЛТЗ</b>
             </a>
         </span>
-        <span class="ie_2">
-            <a href="/files/avtoritet-en.xls">
+        <span id="excel-eng" class="ie_2">
+            <a href="/files/excel-eng.xls">
                 <img src="/img/xls.png">
                 <b>Parts Т-40, ЛТЗ</b>
             </a>
         </span>
     </div>
+    <script type="text/javascript" language="javascript">
+        var versionUpdate = (new Date()).getTime();
+        var pdf_rus = document.querySelectorAll('#pdf-rus');
+        var pdf_eng = document.querySelectorAll('#pdf-eng');
+        var excel_rus = document.querySelectorAll('#excel-rus');
+        var excel_eng = document.querySelectorAll('#excel-eng');
+        pdf_rus.forEach(element => {
+            element.href = '/files/pdf-rus.pdf?v=' + versionUpdate;
+        });
+        pdf_eng.forEach(element => {
+            element.href = '/files/pdf-eng.pdf?v=' + versionUpdate;
+        });
+        excel_rus.forEach(element => {
+            element.href = '/files/excel-rus.xls?v=' + versionUpdate;
+        });
+        excel_eng.forEach(element => {
+            element.href = '/files/excel-eng.xls?v=' + versionUpdate;
+        });
+    </script>
     <div class="content" id="catalog">
     </div>
     <footer>

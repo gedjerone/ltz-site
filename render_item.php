@@ -2,6 +2,8 @@
     require_once 'server/db.php';
     require_once 'server/db_interface.php';
 
+    $version = rand(1, 150000);
+
     $id = $_GET['id'];
 
     $item = get_items_by_id(get_sql_connetion(), $id);
@@ -103,13 +105,13 @@
             Информация о ценах на вкладке <a id="redirect" href="/products"><b>ПРАЙС&#8209ЛИСТЫ</b></a> или в файлах:
             <div class="ie_core">
                 <span class="ie_1">
-                    <a href="/files/1655652223911803.pdf">
+                    <a href="/files/pdf-rus.pdf?v=' . $version . '">
                         <img src="/img/pdf.png">
                         <b>Запчасти Т-40, ЛТЗ</b>
                     </a>
                 </span>
                 <span class="ie_2">
-                    <a href="/files/avtoritet-en.pdf">
+                    <a href="/files/pdf-eng.pdf?v=' . $version . '">
                         <img src="/img/pdf.png">
                         <b>Parts Т-40, ЛТЗ</b>
                     </a>
@@ -117,13 +119,13 @@
             </div>
             <div class="ie_core">
                 <span class="ie_1">
-                    <a href="/files/parts-avtoritet.xls">
+                    <a href="/files/excel-rus.xls?v=' . $version . '">
                         <img src="/img/xls.png">
                         <b>Запчасти Т-40, ЛТЗ</b>
                     </a>
                 </span>
                 <span class="ie_2">
-                    <a href="/files/avtoritet-en.xls">
+                    <a href="/files/excel-eng.xls?v=' . $version . '">
                         <img src="/img/xls.png">
                         <b>Parts Т-40, ЛТЗ</b>
                     </a>
@@ -154,25 +156,25 @@
                 Информация о ценах на вкладке <a id="redirect" href="/products"><b>ПРАЙС&#8209ЛИСТЫ</b></a> или в файлах:
                 <div class="ie_core">
                     <span class="ie_1">
-                        <a href="/files/1655652223911803.pdf">
+                        <a href="/files/pdf-rus.pdf?v=' . $version . '">
                             <img src="/img/pdf.png">
                             <b>Запчасти Т-40, ЛТЗ</b>
                         </a>
                     </span>
                     <span class="ie_2">
-                        <a href="/files/avtoritet-en.pdf">
+                        <a href="/files/pdf-eng.pdf?v=' . $version . '">
                             <img src="/img/pdf.png">
                             <b>Parts Т-40, ЛТЗ</b>
                         </a>
                     </span>
                     <span class="ie_1">
-                        <a href="/files/parts-avtoritet.xls">
+                        <a href="/files/excel-rus.xls?v=' . $version . '">
                             <img src="/img/xls.png">
                             <b>Запчасти Т-40, ЛТЗ</b>
                         </a>
                     </span>
                     <span class="ie_2">
-                        <a href="/files/avtoritet-en.xls">
+                        <a href="/files/excel-eng.xls?v=' . $version . '">
                             <img src="/img/xls.png">
                             <b>Parts Т-40, ЛТЗ</b>
                         </a>
