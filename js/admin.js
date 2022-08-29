@@ -682,22 +682,26 @@ pdf_rus_btn.addEventListener('click', () => {
     var pdf_rus = document.querySelector('.pdf-rus');
     var name = "pdf-rus.pdf";
     edit_files(pdf_rus, name);
+    alert('Файл успешно изменён!');
 });
 
 pdf_eng_btn.addEventListener('click', () => {
     var pdf_eng = document.querySelector('.pdf-eng');
     var name = "pdf-eng.pdf";
     edit_files(pdf_eng, name);
+    alert('Файл успешно изменён!');
 });
 
 excel_rus_btn.addEventListener('click', () => {
     var excel_rus = document.querySelector('.excel-rus');
-    var name = "excel-rus.pdf";
+    var name = "excel-rus.xls";
     edit_files(excel_rus, name);
+    alert('Файл успешно изменён!');
 });
 
 excel_eng_btn.addEventListener('click', () => {
     var excel_eng = document.querySelector('.excel-eng');
-    var name = "excel-eng.pdf";
+    var name = "excel-eng.xls";
     edit_files(excel_eng, name);
+    alert('Файл успешно изменён!');
 });
